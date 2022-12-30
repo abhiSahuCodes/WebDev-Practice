@@ -1,0 +1,159 @@
+body {
+    background-color: #faedcd;
+}
+
+
+button {
+    color: #9a031e;
+    font-size: 25px;
+    background-color: #264653;
+}
+
+h1,h2 {
+    color: rgb(71, 16, 32);
+}
+ h1 {
+     font-size: 35px;
+ }
+/* ! Here id selector is used for only one button and id selector is used only for one particular element*/
+#reg {
+    color: #5e548e;
+    background-color: #ff9f1c;
+}
+
+/*! Here class selector is used- in html file it is for span-look for it */
+.tags {
+    background-color: #c1121f;
+    color: #fcf6bd;
+    font-size: 16px;
+}
+/*! Descendent selector- Here we are going to style the anchor "a" attributes but the footer a different one */
+/*!   1.give all the required a class for selector use- here in all the 3 sections
+/*!   2- <a>s are inside sections
+ /*!  3- combine class selector "." and then descendent selector that is a space */
+
+.descend a {
+    color: #f72585;
+    text-decoration: none;
+}
+
+/*^ descendent inside a footer */
+
+footer a {
+    color: #003566;
+}
+
+/*^ Adjacent selector
+/*^ Here the element is adjacent to one 
+/*^ formula= h1 + p{} */
+/*^ Lets style button just after input at the start */
+
+input + button {
+    color: #F9CEEE;
+}
+
+/* Lets do all butttons after h2 */
+
+h2 + button {
+    background-color: #68A7AD
+}
+
+/* Direct child
+   Formula= div > li {} 
+   It selects only the <li>s that are direct children of a <div> element*/
+
+/* Here lets make an <a> nested after footer
+before doing this the <a> will be like all <a> in footer */
+
+footer > a {
+    color: #F66B0E;
+}
+
+/* Attribute selector 
+   Here we are going to style an input. There could be many input but we can use the input type to style it.*/
+
+/* Formula= input[type="text"] {}  */ 
+/* This will select all input elements where the type is set to "text" */
+
+input[type="password"] {
+    color: #F68989;
+}
+
+section[class="descend"] {
+    background-color: #FAEEE7;
+}
+
+/* The above can be written as this also. */
+/* .descend {
+    background-color: #FAEEE7;
+} */
+
+/* If I have to color the last <a> in the listed elements
+   Here "pup" is inside puppies. Even I can write pupp which is exclusive for the last <a> 
+   See the "*" symbol after href*/
+/* Look for MDN for more such attribute selectors */
+a[href*="pup"] {
+    color: #8E0505;
+}
+
+/* Now lets start pseudo classes */
+/* Lets start with Hover */
+/* Refer MDN for more info */
+
+button:hover {
+    background-color: #8E0505;
+    color: #9D84B7;
+}
+/*^ But hey, why is the signup button not showing hovering property?
+/*^ Here comes the specificity factor and that id selector (used above for this button) wins the battle. */
+
+/*^ The id selector,class selector can be utilised for hover with":" */
+
+/*^ hover for underline <a> but first make the text-decoration to none*/
+
+.descend a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* It is for active pseudo class- when you click the button it changes style*/
+.descend button:active {
+    background-color: #F5F5F5;
+    color: #264653;
+}
+
+/* Lets triple the number of .descend paragraphs */
+/* Now if I want to change the background of only of the 3rd, 6th and 9th */
+/* I have to use ":nth-of-type(3n)" or to choose only the 3rd one "nth-of-type(3)" */
+
+.descend:nth-of-type(3n) {
+    background-color: #C6D57E;
+}
+
+/* pseudo elements are used for a specific part of a document like the first letter of a word in
+   a sentence */
+   /* The formula uses "::" and then the particular selection command*/
+   /* Let's make the first letter of each sentence in each h2 bigger */
+
+h2::first-letter {
+    font-size: 30px;
+}
+
+/* Let's make the first sentence of a paragraph purple */
+
+p::first-line {
+    color: purple;
+}
+
+/* Now, let's make the selection color in the paragraph pink */
+
+p::selection {
+    color: #F8485E;
+}
+
+/* THE ORDER OF CODE IN CSS MATTERS */
+/* IT PREFERS THE LATER ONE IF TWO ENTITIES OF CODE ARE SAME */
+/* SO, IF H1 IS STYLED FOR TWO TIMES AND EACH TIME THE COLOR IS DIFFERENT,
+   THEN IT WILL PREFER THE 2ND CODE */
+/* IF THERE ARE TWO STYLESHEETS AND EACH HAS SAME ENTITIES WITH DIFFERENT VALUES,
+   THEN IT WILL USE THE VALUE PRESENT IN THE 2ND STYLESHEET */
