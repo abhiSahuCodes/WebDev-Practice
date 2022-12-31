@@ -1,0 +1,47 @@
+/*^ 1-At first we have given width, height, and background color to three divs; body; and h1 */
+/*^ 2-Then we have made and styled border. Like border-width, border-style, border-color, and border-radius. Specific side of border was also styled. */
+
+
+div {
+    width: 200px;
+    height: 250px;
+    background-color: brown;
+}
+
+body {
+    width: 400px;
+    height: 900px;
+}
+
+h1 {
+    background-color: forestgreen;
+    width: 150px;
+    height: 40px;
+}
+
+#ek {
+    border-width: 3px;
+    border-style: solid;
+    border-color:darkblue;
+    /*! After giving border the content width actually doesnot change and the border takes space after it. */
+    /*! So, the div area here will increase by 6px. To keep div area unchanged we have to write (box-sizing: border-box)  */
+    border-radius: 5%;
+    margin: 20px;
+}
+
+#do {
+    background-color: #eae2b7;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: #84a59d;
+    border-left-width: 5px;
+    border-top-left-radius: 8%;
+}
+
+#teen {
+    background-color: #f4a259;
+    border: 3px dotted #ef476f;
+    box-sizing: border-box;
+    border-radius: 4% 10%;
+    padding: 20px;
+}
