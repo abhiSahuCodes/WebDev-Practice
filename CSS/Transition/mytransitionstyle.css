@@ -32,3 +32,16 @@ section:hover div {
     margin-left:500px;
 }
 
+/* Here timing-funtion will be added. */
+div:nth-of-type(3){
+    transition-timing-function: steps(11);
+}
+div:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+div:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+}
