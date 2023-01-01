@@ -1,0 +1,28 @@
+h1 {
+    background-color: darkorange;
+    border: 1px solid black;
+    display: block;
+}
+
+span {
+    background-color: blue;
+    color: darkkhaki;
+    border: 3px solid black;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: darkred;
+    border: 2px dashed black;
+    display: inline-block;
+    margin: 50px;
+}
+
+/* ! Here inline, block, inline-block display property is used. */
+/* ^ Inline- Here height and width is nullified. */
+/* & Block- Here height and width is not masked. */
+/* ? Inline-Block- This is used to work as inline display but with properties of block like width and height */
