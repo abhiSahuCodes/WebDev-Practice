@@ -1,0 +1,72 @@
+/* Here as the section is the parent, the percentages denoted in div will be relative to the sections dimensions. */
+section {
+    background-color: #fb5607;
+    width: 600px;
+    height: 600px;
+}
+
+div {
+    background-color: #f15bb5;
+    width: 50%;
+    height: 50%;
+}
+
+/* In line-height it is not related to parent but to the element itself */
+/* The 200% is that of 50px */
+h1 {
+    font-size: 50px;
+    border: 1px solid black;
+    line-height: 200%;
+}
+
+/* Now we will see "em" use */
+/* article is parent and h2 inherits according to it. Here 20px will be 1em and H2 will be 2em= 40px */
+/* Here it works like this only in font-size property. */
+h2 {
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+p {
+    font-size: 1em;
+}
+article {
+    font-size: 20px;
+}
+
+/* With other properties, 1em= the computed font-size
+of the element itself. */
+/* Like here the margin in h2 is relative to the 
+2em font size of the h2 only. */
+/* Hence, article=20px, so h2=2em=40px and then margin-left
+of h2= 40px/2=20px (not from the article)  */
+
+/*! button {
+    font-size: 30px;
+    padding: 0 30px;
+    border-radius: 15px;
+    background-color: #fca311;
+    color: azure;
+} */
+
+/* Here if I change the font-size if those are on px,  then 
+the radius won't change as per the increased text size as px is not relatable and are 
+stand alone. But if I use em then then they can be kept relative
+and that can be of great use where we don't have to manually adjust 
+all those things. See the red comment codes that can't be relative 
+as px is used. Let's use it using em. This em of font-size
+is related to article and other properties em are related to 
+button font size*/
+
+button {
+     font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #fca311;
+    color: azure;
+}
+
+
