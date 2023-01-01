@@ -1,0 +1,44 @@
+html {
+    font-size: 30px;
+}
+
+article {
+    font-size: 20px;
+}
+
+/* Now using Rem in ul it can cause problem. */
+/* Like if font-size of ul is more than 1em then as the nested goes deeper from ul to last
+spinach ricotta, size increases as one becomes parent of the below one.
+And size gradually decreases if font-size is less than 1em. */
+
+/*! ul {
+    font-size: 0.7em;
+} */
+
+/* Rem is used so that the relativity only remains with the 
+1st parent one */
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.7rem;
+}
+
+#rems button {
+    font-size: 2rem;
+    border-radius: 0.8rem;
+}
+
+button {
+    background-color: aqua;
+    color: darkslategrey;
+    border-radius: 0.5rem;
+}
+
+/* todo Doubt about rem use and border radius relativity. */
