@@ -1,0 +1,20 @@
+
+/* & -------------------------------------------- */
+/* !----Max-width---- */
+.one{
+    border: 2px solid blue;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    width: 800px;
+}
+/* max-width makes the div width to a maximum of 800px
+    but not a fixed width of 800px unlike the "one" div.
+    It is going to minimize the width according to the 
+    viewport width*/
+.two{
+    border: 2px solid yellow;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    max-width: 800px;
+}
+/*& --------------------------------------------- */
