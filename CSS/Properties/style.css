@@ -18,3 +18,16 @@
     max-width: 800px;
 }
 /*& --------------------------------------------- */
+
+/* !----Float---- */
+
+.avatar{
+    border: 2px solid purple;
+}
+
+.avatar-poster{
+    max-width: 8rem;
+    /* float: right; */
+    /* float: top; */
+    float: left;
+}
