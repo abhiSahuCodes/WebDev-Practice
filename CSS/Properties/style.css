@@ -43,10 +43,14 @@
 .shadow p{
     font-size: 3rem;
     font-weight: 600;
-    color: chocolate;
+    /* color: chocolate; */
+    color: #000000;
     /* text-shadow: 4px 4px; */
     /* text-shadow: 4px 4px blue; */
     /* text-shadow: 4px 4px 8px blue; */
-    text-shadow: 0 0 5px #205295;
-
+    /* text-shadow: 0 0 5px #205295; */
+    /* ^ Multiple-shadow testing */
+    /* text-shadow: 0 0 8px #DC0000, 0 0 10px #0000FF; */
+    /* ^ Border-text  */
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 }
