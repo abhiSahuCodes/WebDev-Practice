@@ -31,3 +31,22 @@
     /* float: top; */
     float: left;
 }
+/*& --------------------------------------------- */
+
+/* !----Text-shadow---- */
+
+.shadow{
+    border: 2px solid gray;
+    max-width: 400px;
+}
+
+.shadow p{
+    font-size: 3rem;
+    font-weight: 600;
+    color: chocolate;
+    /* text-shadow: 4px 4px; */
+    /* text-shadow: 4px 4px blue; */
+    /* text-shadow: 4px 4px 8px blue; */
+    text-shadow: 0 0 5px #205295;
+
+}
