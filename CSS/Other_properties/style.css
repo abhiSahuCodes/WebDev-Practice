@@ -4,3 +4,24 @@
     border: 3px solid #323592;
     padding: 5px 10px;
 }
+
+/* ---------------------------------------------------- */
+table{
+border: 2px solid blue;
+text-align: center;
+font-size: 20px;
+width: 80%;
+height: 50%;
+}
+
+th{
+border: 5px solid red;
+background-color: yellow;
+}
+td{
+border: 5px solid violet;
+background-color: cyan;
+}
+#t1 {
+border-collapse: separate;
+}
