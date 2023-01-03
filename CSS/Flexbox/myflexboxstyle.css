@@ -1,0 +1,18 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+main .sidebar {
+    background-color: blueviolet;
+    /* border: 2px solid white; */
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: aqua;
+    flex: 2 1 800px;
+}
+
