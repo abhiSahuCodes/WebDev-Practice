@@ -25,3 +25,22 @@ background-color: cyan;
 #t1 {
 border-collapse: separate;
 }
+
+/* ---------------------------- */
+
+.one{
+    background-color: #ff0000;
+    width: 15rem;
+    height: 10rem;
+    margin-top: 5rem;
+    border-collapse: separate;
+}
+
+.child{
+    background-color: #eeeeee;
+    width: 8rem;
+    border-collapse: separate;
+    height: 6rem;
+    margin-left: 3rem;
+    margin-top: 5rem; /*This is the margin property that is collapsing*/
+}
