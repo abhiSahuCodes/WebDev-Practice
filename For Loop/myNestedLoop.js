@@ -31,9 +31,17 @@
 //     }
 // }
 
-const secret = 'Baby';
-let guess = prompt.toUpperCase('enter the secret code');
-while (guess !== secret){
-    guess = prompt('enter the secret code');
+// const secret = 'Baby';
+// let guess = prompt.toUpperCase('enter the secret code');
+// while (guess !== secret){
+//     guess = prompt('enter the secret code');
+// }
+// console.log('Congrats!');
+
+// ! ex-3
+const arr = [[1, 2], [3, 4], [5, 6]];
+for(let i = 0; i < arr.length; i++) {
+  for(let j = 0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
+  }
 }
-console.log('Congrats!');
