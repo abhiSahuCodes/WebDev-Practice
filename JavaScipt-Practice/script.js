@@ -17,18 +17,22 @@
 // console.log(`The HCF of ${number1} and ${number2} is ${hcf}`);
 
 // ======================================================================
-// todo-- To find HCF using while loop
 
-const number1 = prompt("Enter the first positive integer: ");
-const number2 = prompt("Enter the second positive integer: ");
+//! ----To write a program to get the currrent date
 
-while (number1 != number2){
-    if(number1 > number2){
-        number1 -= number2;
-    }
-    else {
-        number2 -= number1;
-    }
+var today = new Date();
+var dd = today.getDate();
+
+var mm = today.getMonth()+1;
+var yyyy = today.getFullYear();
+if (dd<10){
+    dd = '0' +dd;
 }
 
-console.log(`HCF is ${number1}`)
+if(mm<10){
+    dd= '0' +mm;
+}
+
+today = dd+'-'+mm+'-'+yyyy;
+console.log(today);
+
