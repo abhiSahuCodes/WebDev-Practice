@@ -38,17 +38,19 @@
 
 //! This progarm is giving the month and year correctly but the day is incorrect. I think there is problem in '.getDate()'------But I am saving this code for further update.
 
-// ============================================
+// ==================================================
 // ! To find the leap year
 
-const year = prompt("Enter the year");
+// const year = prompt("Enter the year");
 
-console.log(year);
+// console.log(year);
 
-if(year % 4 === 0){
-    console.log("Hey! This is a leap year.")
-}
-else{
-    console.log("This is not a leap year. Reload and try again!")
-}
+// if(year % 4 === 0){
+//     console.log("Hey! This is a leap year.")
+// }
+// else{
+//     console.log("This is not a leap year. Reload and try again!")
+// }
+
+// ==================================================
 
