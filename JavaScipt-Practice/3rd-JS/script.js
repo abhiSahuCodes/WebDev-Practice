@@ -35,22 +35,37 @@
 
 // ---------------------------------------------------------
 
-// JavaScript program to illustrate 
-    // calculation of no. of days between two date 
+// Find the of no. of days between two date 
       
-    //~ To set two dates to two variables
-    var date1 = new Date("06/30/2019");
-    var date2 = new Date("07/30/2019");
+// //~ To set two dates to two variables
+// var date1 = new Date("06/30/2019");
+// var date2 = new Date("07/30/2019");
+  
+// //^ To find the time difference between two dates
+// var Difference_In_Time = date2.getTime() - date1.getTime();
+  
+// //^ To find the no. of days between two dates
+// var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+  
+// //^To print the final no. of days (result)
+// console.log("Total number of days between dates  <br>"
+//            + date1 + "<br> and <br>" 
+//            + date2 + " is: <br> " 
+//            + Difference_In_Days);
       
-    //^ To calculate the time difference of two dates
-    var Difference_In_Time = date2.getTime() - date1.getTime();
-      
-    //^ To calculate the no. of days between two dates
-    var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-      
-    //^To display the final no. of days (result)
-    console.log("Total number of days between dates  <br>"
-               + date1 + "<br> and <br>" 
-               + date2 + " is: <br> " 
-               + Difference_In_Days);
-      
+// -------------------------------------------------------------------
+
+// multiple case switch program
+let input = prompt("Enter the name of a game")
+let game = input;
+switch(game) {
+    case 'cricket':
+    case 'hockey':
+    case 'football':
+    case 'basketball':
+        console.log(`${game} is a big game.`);
+        break;
+    default:
+        console.log(`${game} is not a big game.`);
+        break;
+}
