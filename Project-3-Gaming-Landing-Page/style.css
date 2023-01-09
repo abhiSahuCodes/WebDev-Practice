@@ -16,7 +16,7 @@ body{
     margin: 0 auto;
 }
 
-@media all and (max-width: 1280px){
+@media all and (max-width: 1024px){
     html{
         font-size: 70%;
     }
@@ -223,261 +223,242 @@ body{
 
 /* !======================================================================= */
 
-@media all and (max-width: 1280px){
-
-.nav-bar{
-    padding: 2% 8%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
-
-.img-menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    max-width: fit-content;
-}
-
-.logoNavImg{
-    width: 80%;
-}
-
-.list{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    white-space: nowrap;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    color: #cec7c8;
-}
-
-.list-items{
-    list-style-type: none;
-    text-align: center;
-}
-
-.list-items:hover{
-    cursor: pointer;
-    color: #8e8889;
-}
-
-.buttons{
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: max-content;
-    align-items: center;
-}
-
-.buttons span{
-    color: #ec3333;
-    font-size: 1.4rem;
-}
-
-.buttons span:hover{
-    cursor: pointer;
-    color: #8e8889;
-}
-
-.buttons button{
-    padding: 0.6rem 1.2rem;
-    white-space: nowrap;
-    font-weight: 700;
-    background-color: #F4694C;
-    color: #ffffff;
-    border: none;
-}
-
-.buttons button:hover{
-    cursor: pointer;
-    color: #000000;
-    scale: 0.95;
-    font-weight: 100;
-}
-
-/* &---- Hero-container-first----*/
-
-.hero-one{
-    margin: 3% 8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* ?----left-area---- */
-
-.left-area{
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 5% 0;
-    align-items: center;
-}
-
-.left-area h1{
-    font-size: 2.6rem;
-    text-align: center;
-}
-
-.left-area h1 br{
-    display: inline;
-    content: ' ';
-    clear:none;
-}
-
-.left-area h1 br::after{
-    content: ' ';
-}
-
-.left-area p{
-    color: #cec7c8;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.left-area p br{
-    display: inline;
-    content: ' ';
-    clear: none;
-}
-
-.left-area p br::after{
-    content: ' ';
-}
-
-.buttons-hero{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-.get{
-    padding: 0.8rem 1.6rem;
-    font-size: 1rem;
-    background-color: #F4694C;
-    color: #ffffff;
-    border: none;
-    font-weight: 700;
-}
-
-.learn{
-    padding: 0.8rem 1.6rem;
-    font-size: 1rem;
-    background-color: transparent;
-    color: #FBFCFC;
-    border-color: #FBFCFC;
-}
-
-.get:hover{
-    cursor: pointer;
-    color: #000000;
-    scale: 0.95;
-    font-weight: 100;
-}
-
-.learn:hover{
-    cursor: pointer;
-    color:#6A6C70;
-    background-color: #ffffff;
-    scale: 0.95;
-}
-
-/* ?----Right-area---- */
-
-.right-area{
-    display: flex;
-    flex-direction: column;
-    padding-top: 13%;
-    padding-bottom: 4%;
-    position: relative;
-    right: 0;
-    gap: 2rem;
-    align-items: center;
-    /* max-width: fit-content; */
-}
-
-.playImg{
-    width: 90%;
-    position: relative;
-    /* bottom: 5rem; */
-}
-
-.playImg:hover{
-    scale: 0.95;
-    cursor: pointer;
-}
-
-.game-name-first{
-    display: flex;
-    position: relative;
-    right: 2rem;
-    font-size: 1.4rem;
-    color: #ffffff;
-    gap: 0rem;
-    font-family: 'Poppins', sans-serif;
-    
-}
-
-.name-first{
-    position: relative;
-    left: 4rem;
-    text-align: center;
-    line-height: 2;
-}
-
-.name-first br{
-    display: inline;
-    content: ' ';
-    clear: none;
-}
-
-.name-first br::after{
-    content: ' ';
-}
-
-.right-arrow{
-    display: flex;
-    flex-direction: column-reverse;
-    position: relative;
-    left: 4rem;
-}
-
-.right-arrow:hover{
-    cursor: pointer;
-}
+@media all and (max-width: 1024px){
 
 
 
+            .nav-bar{
+                padding: 5% 8% 2%;
+                color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3rem;
+                margin: 0 auto; 
+            }
 
+            .img-menu{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3rem;
+                max-width: fit-content;
+            }
+
+            .logoNavImg{
+                width: 80%;
+            }
+
+            .list{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                white-space: nowrap;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5rem;
+                color: #cec7c8;
+            }
+
+            .list-items{
+                list-style-type: none;
+                text-align: center;
+            }
+
+            .list-items:hover{
+                cursor: pointer;
+                color: #8e8889;
+            }
+
+            .buttons{
+                font-family: 'Poppins', sans-serif;
+                font-size: 0.8rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                max-width: max-content;
+                align-items: center;
+            }
+
+            .buttons span{
+                color: #ec3333;
+                font-size: 1.4rem;
+            }
+
+            .buttons span:hover{
+                cursor: pointer;
+                color: #8e8889;
+            }
+
+            .buttons button{
+                padding: 0.6rem 1.2rem;
+                white-space: nowrap;
+                font-weight: 700;
+                background-color: #F4694C;
+                color: #ffffff;
+                border: none;
+            }
+
+            .buttons button:hover{
+                cursor: pointer;
+                color: #000000;
+                scale: 0.95;
+                font-weight: 100;
+            }
+
+            /* &---- Hero-container-first----*/
+
+            .hero-one{
+                margin: 3% 8%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            /* ?----left-area---- */
+
+            .left-area{
+                color: #ffffff;
+                font-family: 'Poppins', sans-serif;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                padding: 5% 0;
+                align-items: center;
+            }
+
+            .left-area h1{
+                font-size: 2.6rem;
+                text-align: center;
+            }
+
+            .left-area h1 br{
+                display: inline;
+                content: ' ';
+                clear:none;
+            }
+
+            .left-area h1 br::after{
+                content: ' ';
+            }
+
+            .left-area p{
+                color: #cec7c8;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .left-area p br{
+                display: inline;
+                content: ' ';
+                clear: none;
+            }
+
+            .left-area p br::after{
+                content: ' ';
+            }
+
+            .buttons-hero{
+                display: flex;
+                gap: 2rem;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .get{
+                padding: 0.8rem 1.6rem;
+                font-size: 1rem;
+                background-color: #F4694C;
+                color: #ffffff;
+                border: none;
+                font-weight: 700;
+            }
+
+            .learn{
+                padding: 0.8rem 1.6rem;
+                font-size: 1rem;
+                background-color: transparent;
+                color: #FBFCFC;
+                border-color: #FBFCFC;
+            }
+
+            .get:hover{
+                cursor: pointer;
+                color: #000000;
+                scale: 0.95;
+                font-weight: 100;
+            }
+
+            .learn:hover{
+                cursor: pointer;
+                color:#6A6C70;
+                background-color: #ffffff;
+                scale: 0.95;
+            }
+
+            /* ?----Right-area---- */
+
+            .right-area{
+                display: flex;
+                flex-direction: column;
+                padding-top: 13%;
+                padding-bottom: 4%;
+                position: relative;
+                right: 0;
+                gap: 2rem;
+                align-items: center;
+            }
+
+            .playImg{
+                width: 90%;
+                position: relative;
+            }
+
+            .playImg:hover{
+                scale: 0.95;
+                cursor: pointer;
+            }
+
+            .game-name-first{
+                display: flex;
+                position: relative;
+                right: 2rem;
+                font-size: 1.4rem;
+                color: #ffffff;
+                gap: 0rem;
+                font-family: 'Poppins', sans-serif;
+
+            }
+
+            .name-first{
+                position: relative;
+                left: 4rem;
+                text-align: center;
+                line-height: 2;
+            }
+
+            .name-first br{
+                display: inline;
+                content: ' ';
+                clear: none;
+            }
+
+            .name-first br::after{
+                content: ' ';
+            }
+
+            .right-arrow{
+                display: flex;
+                flex-direction: column-reverse;
+                position: relative;
+                left: 4rem;
+            }
+
+            .right-arrow:hover{
+                cursor: pointer;
+            }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* !========================================================================  */
@@ -485,7 +466,7 @@ body{
 /* !----Second-section */
 
 
-/* .heading-second{
+.heading-second{
     margin: 12% 8% 4% 8%;
 }
 
@@ -493,20 +474,20 @@ h2{
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-size: 2.5rem;
-} */
+}
 
 /* &----Game-cards---- */
 
-/* .game-cards{
+.game-cards{
     margin: 0 8% 4% 8%;
     display: flex;
     justify-content: space-between;
     gap: 0.5rem;
-} */
+}
 
 /* ?----Area-soldiers */
 
-/* .imageFrame{
+.imageFrame{
     width: 15rem;
     height: 17rem;
     background-image: url(./Assets/Photos/image\ 2.png);
@@ -514,16 +495,16 @@ h2{
     background-size: cover;
     background-position: left 19rem center;
     transition: 0.3s;
-} */
+}
 
-/* .imageFrame:hover{
+.imageFrame:hover{
     scale: 1.05;
     cursor: pointer;
 }
 
 .text-button-card-1{
     position: relative;
-    top: 210px;
+    top: 11.44rem;
     padding: 4% 3%;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -567,11 +548,11 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 0.17rem;
-} */
+}
 
 /* ?----Area-warriors---- */
 
-/* .imageFrame-2{
+.imageFrame-2{
     width: 15rem;
     height: 17rem;
     background-image: url(./Assets/Photos/image\ 4.png);
@@ -587,7 +568,7 @@ h2{
 
 .text-button-card-2{
     position: relative;
-    top: 210px;
+    top: 11.44rem;
     padding: 4% 3%;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -636,11 +617,11 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 0.17rem;
-} */
+}
 
 /*?----Area-pubjiken---- */
 
-/* .imageFrame-3{
+.imageFrame-3{
     width: 15rem;
     height: 17rem;
     background-image: url(./Assets/Photos/image\ 3.png);
@@ -656,7 +637,7 @@ h2{
 
 .text-button-card-3{
     position: relative;
-    top: 210px;
+    top: 11.44rem;
     padding: 4% 3%;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -700,11 +681,11 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 0.17rem;
-} */
+}
 
 /* ?----Area-garela---- */
 
-/* .imageFrame-4{
+.imageFrame-4{
     width: 15rem;
     height: 17rem;
     background-image: url(./Assets/Photos/Rectangle\ 56.png);
@@ -720,7 +701,7 @@ h2{
 
 .text-button-card-4{
     position: relative;
-    top: 210px;
+    top: 11.44rem;
     padding: 4% 3%;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -764,10 +745,10 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 0.17rem;
-} */
+}
 
 /* ?----Wargame-banner---- */
-/* 
+
 .wargame-banner{
     margin: 15% 8% 5%;
     display: flex;
@@ -837,7 +818,393 @@ h2{
     background-color: #6A6C70;
     cursor: pointer;
     scale: 1.05;
-} */
+}
+
+/* !============================================================= */
+
+@media all and (max-width: 1024px){
+
+/* !----Second-section */
+
+
+            .heading-second{
+                margin: 12% 8% 4% 8%;
+            }
+            
+            h2{
+                text-align: center;
+                font-family: "Poppins", sans-serif;
+                font-size: 2.5rem;
+            }
+
+            h2 br{
+                display: inline;
+                content: ' ';
+                clear: none;
+            }
+
+            h2 br::after{
+                content: ' ';
+            }
+            
+            /* &----Game-cards---- */
+            
+            .game-cards{
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 2rem;
+                row-gap:6rem;
+                align-items: center;
+                width: max-content;
+                height: max-content;
+            }
+            
+            /* ?----Area-soldiers */
+            
+            .imageFrame{
+                width: 15rem;
+                height: 17rem;
+                background-image: url(./Assets/Photos/image\ 2.png);
+                background-position: center;
+                background-size: cover;
+                background-position: left 19rem center;
+                transition: 0.3s;
+            }
+            
+            .imageFrame:hover{
+                scale: 1.05;
+                cursor: pointer;
+            }
+            
+            .text-button-card-1{
+                position: relative;
+                top: 11.44rem;
+                padding: 4% 3%;
+                font-family: 'Poppins', sans-serif;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(71,76,78, 0.95);
+                justify-content: space-between;
+            
+            }
+            
+            .description-text p:first-child{
+                font-size: 1.2rem;
+                color: #FAFAFB;
+                font-weight: 700;
+            }
+            
+            .description-text p:nth-child(2){
+                color: #b0b8b8;
+                font-size: 1rem;
+            }
+            
+            .stars img{
+                width: 0.7rem;
+                padding-right: 0.4rem;
+            }
+            
+            .button-download{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .download-orange{
+                padding: 0.6rem 1rem;
+                background-color: #F4694C;
+                color: #FAFAFB;
+                font-weight: 700;
+                border: none;
+            
+            }
+            
+            .description-text{
+                display: flex;
+                flex-direction: column;
+                gap: 0.17rem;
+            }
+            
+            /* ?----Area-warriors---- */
+            
+            .imageFrame-2{
+                width: 15rem;
+                height: 17rem;
+                background-image: url(./Assets/Photos/image\ 4.png);
+                background-position: center;
+                background-size: cover;
+                transition: 0.3s;
+            }
+            
+            .imageFrame-2:hover{
+                scale: 1.05;
+                cursor: pointer;
+            }
+            
+            .text-button-card-2{
+                position: relative;
+                top: 11.44rem;
+                padding: 4% 3%;
+                font-family: 'Poppins', sans-serif;
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(27, 27, 21, 0.98);
+                justify-content: space-between;
+            }
+            
+            .description-text p:first-child{
+                font-size: 1.2rem;
+                color: #FAFAFB;
+                font-weight: 700;
+            }
+            
+            .description-text p:nth-child(2){
+                color: #b0b8b8;
+                font-size: 1rem;
+            }
+            
+            .stars img{
+                width: 0.7rem;
+                padding-right: 0.4rem;
+            }
+            
+            .button-download{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .download-orange{
+                padding: 0.6rem 1rem;
+                background-color: #F4694C;
+                color: #FAFAFB;
+                font-weight: 700;
+                border: none;
+                transition: 0.3s;
+            }
+            
+            .download-orange:hover{
+                background-color: #ff441e;
+                cursor: pointer;
+                scale: 1.05;
+            }
+            
+            .description-text{
+                display: flex;
+                flex-direction: column;
+                gap: 0.17rem;
+            }
+            
+            /*?----Area-Garela---- */
+            
+            .imageFrame-3{
+                width: 15rem;
+                height: 17rem;
+                background-image: url(./Assets/Photos/image\ 3.png);
+                background-position: center;
+                background-size: cover;
+                transition: 0.3s;
+            }
+            
+            .imageFrame-3:hover{
+                scale: 1.05;
+                cursor: pointer;
+            }
+            
+            .text-button-card-3{
+                position: relative;
+                top: 11.44rem;
+                padding: 4% 3%;
+                font-family: 'Poppins', sans-serif;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(71,79,137, 0.95);
+                justify-content: space-between;
+            
+            }
+            
+            .stars img{
+                width: 0.7rem;
+                padding-right: 0.4rem;
+            }
+            
+            .button-download{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .download-orange{
+                padding: 0.6rem 1rem;
+                background-color: #F4694C;
+                color: #FAFAFB;
+                font-weight: 700;
+                border: none;
+            
+            }
+            
+            .description-text{
+                display: flex;
+                flex-direction: column;
+                gap: 0.17rem;
+            }
+            
+            /* ?----Area-Pubjiken Dak---- */
+            
+            .imageFrame-4{
+                width: 15rem;
+                height: 17rem;
+                background-image: url(./Assets/Photos/Rectangle\ 56.png);
+                background-position: center;
+                background-size: cover;
+                transition: 0.3s;
+            }
+            
+            .imageFrame-4:hover{
+                scale: 1.05;
+                cursor: pointer;
+            }
+            
+            .text-button-card-4{
+                position: relative;
+                top: 11.44rem;
+                padding: 4% 3%;
+                font-family: 'Poppins', sans-serif;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(97,86,82, 0.96);
+                justify-content: space-between;
+            
+            }
+            
+            .stars img{
+                width: 0.7rem;
+                padding-right: 0.4rem;
+            }
+            
+            .button-download{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            .download-orange{
+                padding: 0.6rem 1rem;
+                background-color: #F4694C;
+                color: #FAFAFB;
+                font-weight: 700;
+                border: none;
+            
+            }
+            
+            .description-text{
+                display: flex;
+                flex-direction: column;
+                gap: 0.17rem;
+            }
+            
+            /* ?----Wargame-banner---- */
+            
+            .wargame-banner{
+                margin: 0% 3% 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                padding: 0 0;
+            }
+            
+            .wargame{
+                max-width: 40rem;
+                height: auto;
+            }
+            
+            .wargameImg{
+                object-fit: contain; 
+            }
+            
+            .wargame-info{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                position: relative;
+                bottom: 10rem;
+                align-items: center;
+
+            }
+            
+            .wargame-info h2{
+                text-align: left;
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+            }
+            
+            .wargame-info p{
+                font-family: 'Poppins', sans-serif;
+                margin: auto;
+                text-align: center;
+                font-size: 1.2rem;
+                line-height: 1.5;
+                color: #717171;
+                text-align: center;
+            }
+
+            .wargame-info p br{
+                display: inline;
+                content: ' ';
+                clear: none;
+            }
+            
+            .wargame-info p br::after{
+                content: ' ';
+            }
+
+            .buttons-wargame{
+                display: flex;
+                flex-direction: row;
+                gap: 5%;
+            }
+            
+            .explore{
+                padding: 2% 4%;
+                color: #FBFCFC;
+                background-color: #F4694C;
+                border: none;
+                font-size: 1.05rem;
+                transition: 0.3s;
+                white-space: nowrap;
+            }
+            
+            .explore:hover{
+                background-color: #ff441e;
+                cursor: pointer;
+                scale: 1.05;
+            }
+            
+            .learn-more{
+                padding: 2% 4%;
+                color: #F4694C;
+                font-size: 1.05rem;
+                border: 2px solid #F4694C;
+                background-color: #ffffff;
+                transition: 0.3s;
+                white-space: nowrap;
+            }
+            
+            .learn-more:hover{
+                background-color: #6A6C70;
+                cursor: pointer;
+                scale: 1.05;
+            }
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+
+
+/* !=============================================================== */
 
 /* &----Recommend-bar */
 /* 
