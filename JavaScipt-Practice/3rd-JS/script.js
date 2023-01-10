@@ -89,9 +89,38 @@
 //     console.log(input[x]);
 // }
 
-//^ Using for....of....
-let input = prompt('Enter a string')
+// //^ Using for....of....
+// let input = prompt('Enter a string')
 
-for (let i of input){
-    console.log(i);
-}
+// for (let i of input){
+//     console.log(i);
+// }
+
+// -------------------------------------------------------------------- node script.js
+
+//^ Javascript array methods
+
+//^ Pop
+
+let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
+
+// let newList = movies.pop();
+// console.log(newList);
+
+
+//^ Push
+
+// let newList1 = movies.push('Tum Bin');
+// console.log(movies);
+
+
+//^ Reverse
+
+// let newListrev = movies.reverse();
+// console.log(newListrev);
+
+//^Filter
+
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter(word => word.length > 6);
+console.log(result);
