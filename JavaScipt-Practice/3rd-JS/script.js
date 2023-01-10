@@ -56,16 +56,42 @@
 // -------------------------------------------------------------------
 
 // multiple case switch program
-let input = prompt("Enter the name of a game")
-let game = input;
-switch(game) {
-    case 'cricket':
-    case 'hockey':
-    case 'football':
-    case 'basketball':
-        console.log(`${game} is a big game.`);
-        break;
-    default:
-        console.log(`${game} is not a big game.`);
-        break;
+// let input = prompt("Enter the name of a game")
+// let game = input;
+// switch(game) {
+//     case 'cricket':
+//     case 'hockey':
+//     case 'football':
+//     case 'basketball':
+//         console.log(`${game} is a big game.`);
+//         break;
+//     default:
+//         console.log(`${game} is not a big game.`);
+//         break;
+// }
+
+// -------------------------------------------------------------------
+
+
+//^ To find the characters inside a string
+
+//^ Using for loop
+// let input = prompt('Enter a string')
+
+// for (let i =0; i < input.length; i += 1){
+//     console.log(input[i]);
+// }
+
+//^ Using for....in....
+// let input = prompt('Enter a string')
+
+// for (let x in input){
+//     console.log(input[x]);
+// }
+
+//^ Using for....of....
+let input = prompt('Enter a string')
+
+for (let i of input){
+    console.log(i);
 }
