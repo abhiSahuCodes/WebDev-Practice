@@ -141,7 +141,40 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 
 // ----------------------------------------------------------------------------------------
 
-// ! Program for a simple calculator
+// ! Program for a simple calculator 
+
+//^ take the operator input
+// const operator = prompt('Enter operator ( either +, -, * or / ): ');
+
+//^ take the operand input
+// const number1 = parseFloat(prompt('Enter first number: '));
+// const number2 = parseFloat(prompt('Enter second number: '));
+
+// let result;
+
+//^ using if...else if... else
+// if (operator == '+') {
+//     result = number1 + number2;
+// }
+// else if (operator == '-') {
+//     result = number1 - number2;
+// }
+// else if (operator == '*') {
+//     result = number1 * number2;
+// }
+// else {
+//     result = number1 / number2;
+// }
+
+// display the result
+// console.log(`${number1} ${operator} ${number2} = ${result}`);
+
+// --------------------------------------------------------------------------
+
+// ^ Simple calculator using switch 
+
+// program for a simple calculator
+let result;
 
 // take the operator input
 const operator = prompt('Enter operator ( either +, -, * or / ): ');
@@ -150,21 +183,28 @@ const operator = prompt('Enter operator ( either +, -, * or / ): ');
 const number1 = parseFloat(prompt('Enter first number: '));
 const number2 = parseFloat(prompt('Enter second number: '));
 
-let result;
+switch(operator) {
+    case '+':
+         result = number1 + number2;
+        console.log(`${number1} + ${number2} = ${result}`);
+        break;
 
-// using if...else if... else
-if (operator == '+') {
-    result = number1 + number2;
-}
-else if (operator == '-') {
-    result = number1 - number2;
-}
-else if (operator == '*') {
-    result = number1 * number2;
-}
-else {
-    result = number1 / number2;
-}
+    case '-':
+         result = number1 - number2;
+        console.log(`${number1} - ${number2} = ${result}`);
+        break;
 
-// display the result
-console.log(`${number1} ${operator} ${number2} = ${result}`);
+    case '*':
+         result = number1 * number2;
+        console.log(`${number1} * ${number2} = ${result}`);
+        break;
+
+    case '/':
+         result = number1 / number2;
+        console.log(`${number1} / ${number2} = ${result}`);
+        break;
+
+    default:
+        console.log('Invalid operator');
+        break;
+}
