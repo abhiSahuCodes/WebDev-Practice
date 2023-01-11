@@ -125,14 +125,46 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 // const result = words.filter(word => word.length > 6);
 // console.log(result);
 
+// ----------------------------------------------------------------------------------------
+
 // ! Javascript program to convert celsius to fahrenheit
 
 //^ program to convert celsius to fahrenheit
 //^ ask the celsius value to the user 
-const celsius = prompt("Enter a celsius value: ");
+// const celsius = prompt("Enter a celsius value: ");
 
 //^ calculate fahrenheit
-const fahrenheit = (celsius * 1.8) + 32
+// const fahrenheit = (celsius * 1.8) + 32
 
 //^ display the result
-console.log(`${celsius} degree celsius is equal to ${fahrenheit} degree fahrenheit.`);
+// console.log(`${celsius} degree celsius is equal to ${fahrenheit} degree fahrenheit.`);
+
+// ----------------------------------------------------------------------------------------
+
+// ! Program for a simple calculator
+
+// take the operator input
+const operator = prompt('Enter operator ( either +, -, * or / ): ');
+
+// take the operand input
+const number1 = parseFloat(prompt('Enter first number: '));
+const number2 = parseFloat(prompt('Enter second number: '));
+
+let result;
+
+// using if...else if... else
+if (operator == '+') {
+    result = number1 + number2;
+}
+else if (operator == '-') {
+    result = number1 - number2;
+}
+else if (operator == '*') {
+    result = number1 * number2;
+}
+else {
+    result = number1 / number2;
+}
+
+// display the result
+console.log(`${number1} ${operator} ${number2} = ${result}`);
