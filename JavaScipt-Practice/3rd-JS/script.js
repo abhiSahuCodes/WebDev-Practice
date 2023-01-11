@@ -121,6 +121,18 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 
 //^Filter
 
-const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-const result = words.filter(word => word.length > 6);
-console.log(result);
+// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+// const result = words.filter(word => word.length > 6);
+// console.log(result);
+
+// ! Javascript program to convert celsius to fahrenheit
+
+//^ program to convert celsius to fahrenheit
+//^ ask the celsius value to the user 
+const celsius = prompt("Enter a celsius value: ");
+
+//^ calculate fahrenheit
+const fahrenheit = (celsius * 1.8) + 32
+
+//^ display the result
+console.log(`${celsius} degree celsius is equal to ${fahrenheit} degree fahrenheit.`);
