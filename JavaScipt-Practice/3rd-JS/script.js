@@ -173,38 +173,63 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 
 // ^ Simple calculator using switch 
 
-// program for a simple calculator
-let result;
+//^ program for a simple calculator
+// let result;
 
-// take the operator input
-const operator = prompt('Enter operator ( either +, -, * or / ): ');
+//^ take the operator input
+// const operator = prompt('Enter operator ( either +, -, * or / ): ');
 
-// take the operand input
-const number1 = parseFloat(prompt('Enter first number: '));
-const number2 = parseFloat(prompt('Enter second number: '));
+//^ take the operand input
+// const number1 = parseFloat(prompt('Enter first number: '));
+// const number2 = parseFloat(prompt('Enter second number: '));
 
-switch(operator) {
-    case '+':
-         result = number1 + number2;
-        console.log(`${number1} + ${number2} = ${result}`);
-        break;
+// switch(operator) {
+//     case '+':
+//          result = number1 + number2;
+//         console.log(`${number1} + ${number2} = ${result}`);
+//         break;
 
-    case '-':
-         result = number1 - number2;
-        console.log(`${number1} - ${number2} = ${result}`);
-        break;
+//     case '-':
+//          result = number1 - number2;
+//         console.log(`${number1} - ${number2} = ${result}`);
+//         break;
 
-    case '*':
-         result = number1 * number2;
-        console.log(`${number1} * ${number2} = ${result}`);
-        break;
+//     case '*':
+//          result = number1 * number2;
+//         console.log(`${number1} * ${number2} = ${result}`);
+//         break;
 
-    case '/':
-         result = number1 / number2;
-        console.log(`${number1} / ${number2} = ${result}`);
-        break;
+//     case '/':
+//          result = number1 / number2;
+//         console.log(`${number1} / ${number2} = ${result}`);
+//         break;
 
-    default:
-        console.log('Invalid operator');
-        break;
+//     default:
+//         console.log('Invalid operator');
+//         break;
+// }
+
+// -----------------------------------------------------------------------------
+
+// !----Javascript program for finding factorial of a number
+
+// ^ input from the user
+const number = parseInt(prompt("Enter a positive integer"));
+
+// ^ to check if the input number is negative
+if (number < 0) {
+    console.log("It's not a positive number. Factorial of negative number can't exist.")
+}
+
+// ^ if number is 0
+else if (number === 0) {
+    console.log(`The factorial of ${number} is 1.`);
+}
+// ^ if number is positive
+else {
+    let factorial = 1;
+    for (i =1; i <= number; i++) {
+        factorial *= i;
+    }
+    console.log(`Factorial of ${number} is ${factorial}.`);
 }
