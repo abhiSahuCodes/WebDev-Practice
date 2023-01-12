@@ -214,22 +214,72 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 // !----Javascript program for finding factorial of a number
 
 // ^ input from the user
-const number = parseInt(prompt("Enter a positive integer"));
+// const number = parseInt(prompt("Enter a positive integer"));
 
 // ^ to check if the input number is negative
-if (number < 0) {
-    console.log("It's not a positive number. Factorial of negative number can't exist.")
-}
+// if (number < 0) {
+//     console.log("It's not a positive number. Factorial of negative number can't exist.")
+// }
 
 // ^ if number is 0
-else if (number === 0) {
-    console.log(`The factorial of ${number} is 1.`);
-}
+// else if (number === 0) {
+//     console.log(`The factorial of ${number} is 1.`);
+// }
 // ^ if number is positive
-else {
-    let factorial = 1;
-    for (i =1; i <= number; i++) {
-        factorial *= i;
-    }
-    console.log(`Factorial of ${number} is ${factorial}.`);
+// else {
+//     let factorial = 1;
+//     for (i =1; i <= number; i++) {
+//         factorial *= i;
+//     }
+//     console.log(`Factorial of ${number} is ${factorial}.`);
+// }
+
+// ----------------------------------------------------------------------------------------------------
+
+// !----Javascript program to shuffle a deck of cards
+
+// ^ declaring card elements
+
+const suits = ["Spades", "Diamonds", "Club", "Hearts"];
+const values = [
+    "Ace",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "Jack",
+    "Queen",
+    "King",
+];
+
+// ^ empty array to contain the cards
+let deck = [];
+
+// ^ creating a deck of cards
+for (let i = 0; i < suits.length; i++) {             //To loop around the suits
+  for (let x = 0; x < values.length; x++) {         //To loop around values that is inside suits
+    let card = { Value: values[x], Suit: suits[i] };//card variable to contain the combination
+    deck.push(card);                                //each value produced through loop is pushed into deck array
+  }
+}
+
+// ^ shuffle cards
+for (let i = deck.length - 1; i > 0; i--){
+    let j = Math.floor(Math.random() * i);
+    let temp = deck[i];
+    deck[i] = deck[j];
+    deck[j] = temp;
+}
+
+console.log("The first five cards are:");
+
+//  ^ for 5 results
+for (let i = 0; i < 5; i++){
+    console.log(`${deck[i].Value} of ${deck[i].Suit}`);
 }
