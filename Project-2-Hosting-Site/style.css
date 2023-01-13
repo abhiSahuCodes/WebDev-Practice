@@ -711,7 +711,7 @@ body{
                 width: 80%;
                 gap: 2rem;
             }
-            
+
             .main-features-list > div{
                 font-size: 2rem;
             }
@@ -724,7 +724,7 @@ body{
 
 /* !----Third-Page---- */
 
-/* .third-page{
+.third-page{
     background-color: #000000;
 }
 
@@ -747,21 +747,21 @@ body{
 .heading-third img{
     position: relative;
     top: 4rem;
-} */
+}
 
 /* &----Subscription-panel---- */
 
-/* .subscription-panel{
+.subscription-panel{
     margin: 0 5%;
     display: flex;
     justify-content: space-between;
     padding: 5% 0 10%;
     font-family: Arial, Helvetica, sans-serif;
-} */
+}
 
 /* todo----Regular-panelbox----*/
 
-/* .regular{
+.regular{
     background-color: #ffffff;
     padding: 3.5% 3%;
     max-width: fit-content;
@@ -834,11 +834,11 @@ body{
 .p-2{
     font-size: 1rem;
     color: #373636;
-} */
+}
 
 /* todo----Standard-panelbox---- */
 
-/* .standard{
+.standard{
     background-color: #0C8BFD;
     padding: 3.5% 3.3% 2% 3.5%;
     max-width: fit-content;
@@ -914,11 +914,11 @@ body{
     font-size: 1rem;
     color: #373636;
     color: #ffffff;
-} */
+}
 
 /* todo----Premium-panelbox */
 
-/* .premium{
+.premium{
     background-color: #ffffff;
     padding: 3% 3%;
     max-width: fit-content;
@@ -992,7 +992,194 @@ body{
 .p-6{
     font-size: 1rem;
     color: #373636;
-} */
+}
+
+/* !---------------------------------------------------- */
+
+    @media all and (max-width: 1024px){
+        /* !----Third-Page---- */
+
+            .heading-third{
+                display: flex;
+                justify-content: space-between;
+                padding: 5% 3% 10%;
+                align-items: center;
+                gap: 5%;
+                margin: 0 2%;
+            }
+
+            .heading-third h2{
+                color: #ffffff;
+                text-align: center;
+                font-size: 3rem;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 100;
+                line-height: 1.5;
+                position: relative;
+                top: 4rem;
+            }
+
+            .heading-third h2 br{
+                display: inline;
+                content: ' ';
+                clear: none;
+            }
+
+            .heading-third h2 br::after{
+                content: ' ';
+            }
+
+            .heading-third img{
+                position: relative;
+                top: 4rem;
+                width: 8rem;
+            }
+
+        /* &----Subscription-panel---- */
+
+            .subscription-panel{
+                margin: 3% 5% 8%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 5% 0 0%;
+                font-family: Arial, Helvetica, sans-serif;
+                gap: 4rem;
+            }            
+
+        /* todo----Regular-panelbox----*/
+            .regular{
+                background-color: #ffffff;
+                padding: 4.5% 7.5%;
+                max-width: max-content;
+                display: flex;
+                flex-direction: column;
+                border-radius: 5rem;
+                width: 100%;
+            }
+
+            .facility-regular{
+                gap: 1.5rem;
+            }
+
+            .facility-regular p{
+                font-size: 2.5rem;
+            }
+
+            .select-regular{
+                font-size: 3.2rem;
+                border-radius: 9%/50%;
+            }
+
+            .regular h3{
+                font-size: 3rem;
+            }
+
+            .p-1{
+                font-size: 4rem;
+            }
+
+            .spr-one{
+                font-size: 4rem;
+            }
+
+            .spr-two{
+                font-size: 2.8rem;
+            }
+
+            .p-2{
+                font-size: 2rem;
+            }
+
+        /* todo----Standard-panelbox---- */
+            .standard{
+                padding: 4.5% 6%;
+                max-width: max-content;
+                border-radius: 5rem;
+                width: 100%;
+            }
+
+            .facility-standard{
+                gap: 1.5rem;
+            }
+
+            .facility-standard p{
+                font-size: 2.5rem;
+            }
+
+            .select-standard{
+                font-size: 3.2rem;
+                border-radius: 9%/50%;
+            }
+
+            .standard h3{
+                font-size: 3rem;
+            }
+
+            .p-3{
+                font-size: 4rem;
+            }
+
+            .sps-one{
+                font-size: 4rem;
+            }
+
+            .sps-two{
+                font-size: 2.8rem;
+            }
+
+            .p-4{
+                font-size: 2rem;
+            }
+
+        /* todo----Premium-panelbox */
+            .premium{
+                padding: 4.5% 6%;
+                max-width: max-content;
+                border-radius: 5rem;
+                width: 100%;
+            }
+
+            .facility-premium{
+                gap: 1.5rem;
+            }
+
+            .facility-premium p{
+                font-size: 2.5rem;
+            }
+
+            .select-premium{
+                font-size: 3.2rem;
+                border-radius: 9%/50%;
+            }
+
+            .premium h3{
+                font-size: 3rem;
+            }
+
+            .p-5{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+
+            .spp-one{
+                font-size: 4rem;
+            }
+
+            .spp-two{
+                font-size: 2.8rem;
+            }
+
+            .p-6{
+                font-size: 2rem;
+                color: #373636;
+            }
+        }
+
+/* !--------------------------------------------------- */
+
+
 
 /* !----Fourth-page---- */
 
