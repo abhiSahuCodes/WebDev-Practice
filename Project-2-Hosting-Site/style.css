@@ -261,6 +261,16 @@ body{
                     font-weight: 500;
                     text-align: center;
                 }
+
+                .heading p br{
+                    display: inline;
+                    content: ' ';
+                    clear: none;
+                }
+
+                .heading p br::after{
+                    content: ' ';
+                }
                 
                 .button-2{
                     display: flex;
@@ -532,11 +542,31 @@ body{
             .heading-second h2{
                 font-size: 4rem;
             }
+
+            .heading-second h2 br{
+                display: inline;
+                content: ' ';
+                clear: none;
+            }
+
+            .heading-second h2 br::after{
+                content: ' ';
+            }
         
             .heading-second p{
                 font-size: 2.5rem;
             }
-        
+            
+            .heading-second p br{
+                display: inline;
+                content: ' ';
+                clear: none;
+            }
+
+            .heading-second p br::after{
+                content: ' ';
+            }
+
             .boxes{
                 display: flex;
                 flex-direction: column;
@@ -1574,8 +1604,6 @@ footer{
         padding: 5% 0;
     }
 }
-
-
 /* !------------------------------------------ */
 
 /* !----Finished---- */
