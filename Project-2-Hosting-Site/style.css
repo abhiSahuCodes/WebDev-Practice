@@ -1327,7 +1327,6 @@ body{
             .panel-one{
                 padding: 3rem 4rem 3rem 3rem;
                 border-radius: 4rem;
-                /* width: 80%; */
             }
 
             .head-1 p:nth-child(1), .head-2 p:nth-child(1){
@@ -1548,6 +1547,14 @@ footer{
 }
 
 /* !------------------------------------------- */
+
+@media all and (max-width: 1025px) and (min-width: 1230px){
+    .form-row input{
+        width: 10%;
+    }
+}
+
+
 
 @media all and (max-width: 1024px){
 
