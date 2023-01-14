@@ -628,6 +628,16 @@ body{
                 text-align: center;
             }
 
+            .heading-2s br{
+                display: inline;
+                content: ' ';
+                clear: none;
+            }
+
+            .heading-2s br::after{
+                content: ' ';
+            }
+
             .features-list{
                 display: flex;
                 flex-direction: column;
@@ -636,7 +646,6 @@ body{
                 font-family: Arial, Helvetica, sans-serif;
                 margin: 8% auto;
                 gap: 3rem;
-                
             }
 
             .attributes{
@@ -1296,7 +1305,7 @@ body{
                 line-height: 1.5;
             }
 
-             .heading-fourth p br{
+            .heading-fourth p br{
                 display: inline;
                 content: ' ';
                 clear: none;
@@ -1312,6 +1321,7 @@ body{
                 padding: 5% 0 2%;
                 margin: 7% auto;
                 gap: 2rem;
+                width: 80%;
             }
 
             .panel-one{
@@ -1321,22 +1331,32 @@ body{
             }
 
             .head-1 p:nth-child(1), .head-2 p:nth-child(1){
-                font-size: 2.8rem;
+                font-size: 2.5rem;
             }
 
             .head-1 p:nth-child(2), .head-2 p:nth-child(2){
-                font-size: 2rem;
+                font-size: 1.8rem;
                 padding-top: 1rem;
             }
 
             .review-one>p, .review-two>p{
-                font-size: 2.4rem;
+                font-size: 2.2rem;
                 line-height: 1.5;
                 padding-top: 2rem;
             }
 
+            .review-one>p br, .review-two>p br{
+                display: inline;
+                content: ' ';
+                clear: none;
+            }
+
+            .review-one>p br::after, .review-two>p br::after{
+                content: ' ';
+            }
+
             .dark-colon, .faded-colon{
-                width: 2rem;
+                width: 1.8rem;
             }
 
             .panel-two{
@@ -1364,6 +1384,7 @@ body{
             .pxt{
                 display: flex;
                 align-items: center;
+                justify-content: space-around;
             }
             .stars{
                 padding-top: 1rem;
@@ -1375,7 +1396,7 @@ body{
                 width: 1.6rem;
                 height: 50vh;
                 position: relative;
-                right: 0.2rem;
+                right: 2rem;
             }
 
             .top-pill{
