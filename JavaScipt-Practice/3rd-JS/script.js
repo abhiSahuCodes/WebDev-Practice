@@ -240,46 +240,71 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 
 // ^ declaring card elements
 
-const suits = ["Spades", "Diamonds", "Club", "Hearts"];
-const values = [
-    "Ace",
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "Jack",
-    "Queen",
-    "King",
-];
+// const suits = ["Spades", "Diamonds", "Club", "Hearts"];
+// const values = [
+//     "Ace",
+//     "1",
+//     "2",
+//     "3",
+//     "4",
+//     "5",
+//     "6",
+//     "7",
+//     "8",
+//     "9",
+//     "10",
+//     "Jack",
+//     "Queen",
+//     "King",
+// ];
 
 // ^ empty array to contain the cards
-let deck = [];
+// let deck = [];
 
 // ^ creating a deck of cards
-for (let i = 0; i < suits.length; i++) {             //To loop around the suits
-  for (let x = 0; x < values.length; x++) {         //To loop around values that is inside suits
-    let card = { Value: values[x], Suit: suits[i] };//card variable to contain the combination
-    deck.push(card);                                //each value produced through loop is pushed into deck array
-  }
-}
+// for (let i = 0; i < suits.length; i++) {             //~To loop around the suits
+//   for (let x = 0; x < values.length; x++) {         //~To loop around values that is inside suits
+//     let card = { Value: values[x], Suit: suits[i] };//~card variable to contain the combination
+//     deck.push(card);                                //~each value produced through loop is pushed into deck array
+//   }
+// }
 
 // ^ shuffle cards
-for (let i = deck.length - 1; i > 0; i--){
-    let j = Math.floor(Math.random() * i);
-    let temp = deck[i];
-    deck[i] = deck[j];
-    deck[j] = temp;
-}
+// for (let i = deck.length - 1; i > 0; i--){
+//     let j = Math.floor(Math.random() * i);
+//     let temp = deck[i];
+//     deck[i] = deck[j];
+//     deck[j] = temp;
+// }
 
-console.log("The first five cards are:");
+// console.log("The first five cards are:");
 
 //  ^ for 5 results
-for (let i = 0; i < 5; i++){
-    console.log(`${deck[i].Value} of ${deck[i].Suit}`);
+// for (let i = 0; i < 5; i++){
+//     console.log(`${deck[i].Value} of ${deck[i].Suit}`);
+// }
+
+
+// !-----------------------------------------------------------
+// ^----Javascript program to check occurances of a character
+
+// ^ Input taking
+
+const str = prompt('Enter a string: ');
+const letter = prompt('Enter any letter to check: ');
+
+function countString(str, letter) {            
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {      //& looping through the string
+        if (str.charAt(i) == letter) {          //& checking whether letter wanted is present at the place of index in the string
+            count += 1;
+        }
+    }
+    return count;
 }
+
+// ^ Parameter mentioning and calling the function
+let result = countString(str, letter);
+
+console.log(result);
