@@ -1,0 +1,15 @@
+section {
+  padding: 2rem 20%;
+}
+
+section:nth-child(2) {
+  background: purple;
+  color: white;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  padding: 10rem 20%;
+}
+
+body {
+  margin: 0;
+  font: 1.2rem;
+}
