@@ -290,21 +290,40 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 
 // ^ Input taking
 
-const str = prompt('Enter a string: ');
-const letter = prompt('Enter any letter to check: ');
+// const str = prompt('Enter a string: ');
+// const letter = prompt('Enter any letter to check: ');
 
-function countString(str, letter) {            
-    let count = 0;
+// function countString(str, letter) {            
+//     let count = 0;
 
-    for (let i = 0; i < str.length; i++) {      //& looping through the string
-        if (str.charAt(i) == letter) {          //& checking whether letter wanted is present at the place of index in the string
-            count += 1;
+//     for (let i = 0; i < str.length; i++) {      //& looping through the string
+//         if (str.charAt(i) == letter) {          //& checking whether letter wanted is present at the place of index in the string
+//             count += 1;
+//         }
+//     }
+//     return count;
+// }
+
+// //^ Parameter mentioning and calling the function
+// let result = countString(str, letter);
+
+// console.log(result);
+
+// !-------------------------------------------------------------------------
+
+// ^ program to remove duplicate value from an array
+
+function getUnique(arr){
+    
+    let uniqueArr = [];
+    
+    for(let i of arr) {
+        if(uniqueArr.indexOf(i) === -1) {
+            uniqueArr.push(i);
         }
     }
-    return count;
+    console.log(uniqueArr);
 }
 
-// ^ Parameter mentioning and calling the function
-let result = countString(str, letter);
-
-console.log(result);
+const array = [1, 2, 3, 2, 3];
+getUnique(array);
