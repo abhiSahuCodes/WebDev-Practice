@@ -313,17 +313,40 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 
 // ^ program to remove duplicate value from an array
 
-function getUnique(arr){
+// function getUnique(arr){
     
-    let uniqueArr = [];
-    
-    for(let i of arr) {
-        if(uniqueArr.indexOf(i) === -1) {
-            uniqueArr.push(i);
-        }
-    }
-    console.log(uniqueArr);
-}
+//     let uniqueArr = [];
 
-const array = [1, 2, 3, 2, 3];
-getUnique(array);
+//     for(let i of arr) {
+//         if(uniqueArr.indexOf(i) === -1) {
+//             uniqueArr.push(i);
+//         }
+//     }
+//     console.log(uniqueArr);
+// }
+
+// const array = [1, 2, 3, 2, 3];
+// getUnique(array);
+
+// !-------------------------------------------------------------------------
+
+// ^ JavaScript program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+
+
+for (let i = 1; i <= 100; i++){
+    if(i % 3 === 0) {
+        console.log('Fizz');
+    }
+
+    else if(i % 5 === 0){
+        console.log('Buzz');
+    }
+
+    else if(i % 3 === 0 && i % 5 === 0){
+        console.log('FizzBuzz');
+    }
+
+    else{
+        console.log(i);
+    }
+}
