@@ -358,23 +358,33 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 
 // ^ Simple way of doing it. It requires manual '*' addition for each row.
 
-for (let i = 1; i <= 5; i++) {
-    if (i === 1) {
-      console.log("*");
-    } else if (i === 2) {
-      console.log("* *");
-    } else if (i === 3) {
-      console.log("* * *");
-    } else if (i === 4) {
-      console.log("* * * *");
-    } else if (i === 5) {
-      console.log("* * * * *");
+// for (let i = 1; i <= 5; i++) {
+//     if (i === 1) {
+//       console.log("*");
+//     } else if (i === 2) {
+//       console.log("* *");
+//     } else if (i === 3) {
+//       console.log("* * *");
+//     } else if (i === 4) {
+//       console.log("* * * *");
+//     } else if (i === 5) {
+//       console.log("* * * * *");
+//     }
+// }
+
+// !------------------------------------------------------------------------------------
+
+// ^ Javascript program to generate random strings
+
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+function generateString(length) {
+    let result = ' ';
+    const charactersLength = characters.length;
+    for (let i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
+    return result;
 }
 
-// ^ Automated version
-
-let i;
-let j;
-let char;
-
+console.log(generateString(10));
