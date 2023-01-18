@@ -333,20 +333,48 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 // ^ JavaScript program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
 
-for (let i = 1; i <= 100; i++){
-    if(i % 3 === 0) {
-        console.log('Fizz');
-    }
+// for (let i = 1; i <= 100; i++){
+//     if(i % 3 === 0) {
+//         console.log('Fizz');
+//     }
 
-    else if(i % 5 === 0){
-        console.log('Buzz');
-    }
+//     else if(i % 5 === 0){
+//         console.log('Buzz');
+//     }
 
-    else if(i % 3 === 0 && i % 5 === 0){
-        console.log('FizzBuzz');
-    }
+//     else if(i % 3 === 0 && i % 5 === 0){
+//         console.log('FizzBuzz');
+//     }
 
-    else{
-        console.log(i);
+//     else{
+//         console.log(i);
+//     }
+// }
+
+// !-------------------------------------------------------------------------
+
+// ^ Javascript program for printing stars in ascending order till five stars in row number 5 in a column manner.
+
+
+// ^ Simple way of doing it. It requires manual '*' addition for each row.
+
+for (let i = 1; i <= 5; i++) {
+    if (i === 1) {
+      console.log("*");
+    } else if (i === 2) {
+      console.log("* *");
+    } else if (i === 3) {
+      console.log("* * *");
+    } else if (i === 4) {
+      console.log("* * * *");
+    } else if (i === 5) {
+      console.log("* * * * *");
     }
 }
+
+// ^ Automated version
+
+let i;
+let j;
+let char;
+
