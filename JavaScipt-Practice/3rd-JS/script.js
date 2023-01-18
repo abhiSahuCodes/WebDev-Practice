@@ -376,15 +376,20 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 
 // ^ Javascript program to generate random strings
 
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+// const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
-function generateString(length) {
-    let result = ' ';
-    const charactersLength = characters.length;
-    for (let i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
-}
+// function generateString(length) {
+//     let result = ' ';
+//     const charactersLength = characters.length;
+//     for (let i = 0; i < length; i++) {
+//         result += characters.charAt(Math.floor(Math.random() * charactersLength));
+//     }
+//     return result;
+// }
 
-console.log(generateString(10));
+// console.log(generateString(10));
+
+// ^ Using Built-in Methods
+
+const result = Math.random().toString(36).substring(2,10); //^ Add 2 to desired character length and write at x on the substring(2, x)
+console.log(result);
