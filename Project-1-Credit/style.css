@@ -622,7 +622,7 @@ body{
 
 /* !----Third-page---- */
 
-/* .third-page{
+.third-page{
     background-color: #ffffff;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -666,7 +666,38 @@ body{
     z-index: 10;
     position: relative;
     bottom: 2rem;
-} */
+}
+
+/* !================================================================= */
+@media all and (max-width: 1230px) {
+            .unique-cards{
+                gap: 6rem;
+            }
+            
+            .unique-cards h2{
+                font-size: 5rem;
+                text-align: center;
+            }
+            
+            .unique-cards p{
+                text-align: center;
+                font-size: 2.2rem;
+                padding-top: 10%;
+                text-align: center;
+                line-height: 1.5;
+            }
+
+            .unique-cards p br{
+                display: inline;
+                content: ' ';
+                clear: none;
+            }
+
+            .unique-cards p br::after{
+                content: ' ';
+            }        
+}
+/* !================================================================= */
 
 /* !----Fourth-page---- */
 /* .headings-pg4 h2{
