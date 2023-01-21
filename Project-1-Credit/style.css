@@ -25,11 +25,6 @@ html {
     }
 }
 
-
-
-
-
-
 body{
     max-width: 1440px;
     margin: 0 auto;
@@ -884,12 +879,12 @@ body{
                 height: 2rem;
                 background-color: #797777;
             }
-
+}
 /*!=============================================================  */
 
 /* !----Last-Page---- */
 
-/* .banner{
+.banner{
     margin-top: 20%;
 }
 
@@ -954,11 +949,12 @@ body{
 .pink-grad3 img{
     width: 4rem;
     height: 2rem;
-} */
+}
+
 
 /* !---Footer--- */
 
-/* footer{
+footer{
     display: flex;
     margin: 5% 5%;
     align-items: center;
@@ -978,4 +974,145 @@ body{
     list-style-type: none;
     color: #ffffffe0;
     font-size: 0.9rem;
-} */
+}
+
+/*!===================================================== */
+
+@media all and (max-width: 1230px) {
+            /*!----Last-Page---- */
+
+            .banner-head{
+                margin: 25% auto 0;
+                position: relative;
+                height: 30rem;
+            }
+
+            .backRectangle{
+                width: 100%;
+                height: 30rem;
+                position: relative;
+                bottom: 34rem;
+            }
+
+            .frontRectangle{
+                width: 100%;
+                height: 30rem;
+                position: relative;
+                bottom: 4.5rem;
+            }
+
+            .frontRectangleImg{
+                width: 100%;
+                height: 30rem;
+            }
+
+            .backRectangleImg{
+                width: 100%;
+                height: 30rem;
+            }
+
+            .diamonds{
+                position: relative;
+                bottom: 62rem;
+            }
+
+            .left-diamonds{
+                width: 40%;
+                height: 30rem;
+            }
+
+            .right-diamonds{
+                width: 40%;
+                height: 30rem;
+            }
+
+            .left-diamondImg{
+                height: 30rem;
+                position: relative;
+                bottom: 4rem;
+            }
+
+            .right-diamondImg{
+                height: 30rem;
+                position: relative;
+                bottom: 5rem;
+                transform: rotate(-2deg);
+            }
+
+            .heading-last{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                top: 2rem;
+                margin: 0 auto;
+            }
+
+            .heading-last h3{
+                font-size: 5rem;
+                text-align: center;
+            }
+
+            .heading-last h3 br{
+                display: inline;
+                content: ' ';
+                clear: none;
+            }
+
+            .heading-last h3 br::after{
+                content: ' ';
+            }
+
+            .heading-last span{
+                color: #000000;
+            }
+
+            .start2{
+                display: flex;
+                padding-top: 3rem;
+                align-items: center;
+            }
+            .get-2{
+                position: relative;
+                right: 5.3rem;
+                top: -0.2rem;
+                font-weight: 700;
+                font-size: 2rem;
+            }
+            .pink-grad3 img{
+                width: 10rem;
+                height: 5rem;
+            }
+
+            .right-arrow2{
+                position: relative;
+                top: 0.4rem;
+            }
+
+            /* !---Footer--- */
+
+            footer{
+                display: flex;
+                flex-direction: column;
+                margin: 5% 5%;
+                align-items: center;
+                gap: 5rem;
+            }
+
+            .logoImgFooter{
+                width: 26rem;
+            }
+
+            .list-2{
+                display: flex;
+                justify-content: space-around;
+                gap: 20%;
+            }
+
+            .list-2 li{
+                font-size: 3rem;
+                text-align: center;
+            }
+}
+
+/*!===================================================== */
