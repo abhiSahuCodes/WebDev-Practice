@@ -391,5 +391,32 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 
 // ^ Using Built-in Methods
 
-const result = Math.random().toString(36).substring(2,10); //^ Add 2 to desired character length and write at x on the substring(2, x)
-console.log(result);
+// const result = Math.random().toString(36).substring(2,10); //^ Add 2 to desired character length and write at x on the substring(2, x)
+// console.log(result);
+
+// !--------------------------------------------------------------------------------------
+
+//^ Javascript program to count keys in an object
+
+const student = { 
+    name: 'Roshan',
+    age: 25,
+    hobbies: ['dancing', 'cooking', 'singing'],
+    address: 'Bargarh'
+};
+
+let count = 0;
+
+// loop through each key/value
+for(let key in student) {
+
+    // increase the count
+    ++count;
+}
+
+console.log(count);
+
+
+
+
+
