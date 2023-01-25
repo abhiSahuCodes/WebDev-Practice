@@ -1174,6 +1174,7 @@ body{
 .heading-fourth p{
     font-size: 1rem;
     color: #888787;
+    line-height: 1.5;
 }
 
 .review-panel{
@@ -1216,7 +1217,7 @@ body{
     border: 2px solid #BDBCBC;
     padding: 2rem 0rem 0 3rem;
     position: relative;
-    left: 0rem;
+    left: 3rem;
     border-radius: 6%;
     clip-path: inset(0rem 2.5rem 0rem 0rem );
 }
@@ -1233,6 +1234,10 @@ body{
     flex-direction: column;
     gap: 1rem;
     padding: 8% 0;
+}
+
+.review-two p {
+    max-width: 33rem;
 }
 
 .stars{
