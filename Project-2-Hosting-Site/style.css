@@ -31,6 +31,7 @@ html{
 body{
     max-width: 1440px;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 /* ! Front-page */
@@ -39,7 +40,6 @@ body{
     margin: 0 auto;
     padding: 3% 5% 3%;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* & Nav-bar */
@@ -115,7 +115,6 @@ body{
 .get{
     background-color: #0C8BFD;
     padding: 2% 5%;
-    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 700;
@@ -132,7 +131,6 @@ body{
 .try{
     background-color: #000000;
     padding: 2% 5%;
-    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 700;
@@ -160,7 +158,6 @@ body{
                     margin: 0 auto;
                     padding: 3% 1% 3%;
                     color: #ffffff;
-                    font-family: Arial, Helvetica, sans-serif;
                 }
                 
                 /* & Nav-bar */
@@ -281,7 +278,6 @@ body{
                 .get{
                     background-color: #0C8BFD;
                     padding: 1.5rem 2.5rem;
-                    font-family: Arial, Helvetica, sans-serif;
                     color: #ffffff;
                     font-size: 2rem;
                     font-weight: 700;
@@ -299,7 +295,6 @@ body{
                 .try{
                     background-color: #000000;
                     padding: 2% 5%;
-                    font-family: Arial, Helvetica, sans-serif;
                     color: #ffffff;
                     font-size: 2rem;
                     font-weight: 700;
@@ -361,7 +356,6 @@ body{
     padding: 6% 5%;
     text-align: center;
     gap: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .heading-second h2{
@@ -381,7 +375,6 @@ body{
     justify-content: center;
     margin: 0 5%;
     padding: 8% 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .first-box{
@@ -469,7 +462,6 @@ body{
 .features-list{
     display: flex;
     justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 8% 0;
 }
 
@@ -643,7 +635,6 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                font-family: Arial, Helvetica, sans-serif;
                 margin: 8% auto;
                 gap: 3rem;
             }
@@ -710,7 +701,6 @@ body{
     color: #ffffff;
     text-align: center;
     font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
 
@@ -726,7 +716,6 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 5% 0 10%;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* todo----Regular-panelbox----*/
@@ -982,7 +971,6 @@ body{
                 color: #ffffff;
                 text-align: center;
                 font-size: 3rem;
-                font-family: Arial, Helvetica, sans-serif;
                 font-weight: 100;
                 line-height: 1.5;
                 position: relative;
@@ -1014,7 +1002,6 @@ body{
                 flex-direction: column;
                 justify-content: space-between;
                 padding: 5% 0 10%;
-                font-family: Arial, Helvetica, sans-serif;
                 gap: 4rem;
             }            
 
@@ -1161,12 +1148,12 @@ body{
 }
 
 .heading-fourth{
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 8%;
 }
+
 .heading-fourth h2{
     font-size: 3.2rem;
 }
@@ -1180,7 +1167,6 @@ body{
 .review-panel{
     display: flex;
     justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 5% 0 2%;
     margin: 7% 0;
 }
@@ -1444,7 +1430,6 @@ body{
     font-size: 2rem;
     text-align: center;
     padding: 5% 5% 0%;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
 
@@ -1463,7 +1448,6 @@ body{
     border-radius: 3px;
     display: flex;
     gap: 5rem 10rem;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
@@ -1478,7 +1462,6 @@ body{
     border-radius: 12%/50%;
     border: none;
     outline: none;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .form-row button{
@@ -1486,7 +1469,6 @@ body{
     white-space:nowrap;
     position: relative;
     right: 5%;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #0C8BFD;
     color: #ffffff;
     border-radius: 18%/50%;
@@ -1512,7 +1494,6 @@ body{
     display: flex;
     flex-direction: column;
     padding: 3% 2%;
-    font-family: Arial, Helvetica, sans-serif;
     gap: 0.6rem;
 }
 
