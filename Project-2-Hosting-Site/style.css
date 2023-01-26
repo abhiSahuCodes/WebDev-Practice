@@ -1239,6 +1239,12 @@ body{
     height: 10px;
     width: 10%;
     border-radius: 5%/50%;
+    transition: 0.3s;
+}
+
+.left-pill:hover{
+    background-color: #0062b8;
+    cursor: pointer;
 }
 
 .right-pill{
