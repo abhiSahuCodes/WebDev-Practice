@@ -54,3 +54,17 @@
 
 // ==================================================
 
+//^ To check whether a date is a weekend
+
+let is_weekend = function(date) {
+    let dt = new Date(date);
+    if (dt.getDay() == 6 || dt.getDay() == 0)
+        {
+            return 'weekend';
+        }
+    else {
+        return 'weekday';
+    }
+}
+
+console.log(is_weekend('Jan 27, 2023'));
