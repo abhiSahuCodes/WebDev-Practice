@@ -202,6 +202,13 @@ body{
     clip-path: inset(0 10rem 0 0);
 }
 
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+
+
 @media all and (min-width)
 
 /*!========================================================================  */
