@@ -22,10 +22,9 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 3% 10%;
-    gap: 2rem;
 }
 
-.brand-logo {
+.navbar-container img {
     width: 6.25rem; 
 }
 
