@@ -31,8 +31,22 @@
 // console.log(square(9));
 
 //^ Even if there is no parameters we need to have parenthesis
-let rollDie = () => {
-    return Math.floor(Math.random() * 6) +1; 
-}
+// let rollDie = () => {
+//     return Math.floor(Math.random() * 6) +1; 
+// }
+
+// console.log(rollDie());
+
+//! Implicit Return (Only works if there is only one line of code inside the function)
+//^ The same arrow function can also be written without return keyword as well as without curly braces using simple parenthesis
+let rollDie = () => (
+    Math.floor(Math.random() * 6) +1
+) 
 
 console.log(rollDie());
+
+//^ This can also be written without any parenthesis in one line
+let rollDieAgain = () => Math.floor(Math.random() * 6) +1;
+console.log(rollDieAgain());
+
+
