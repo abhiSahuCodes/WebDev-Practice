@@ -4,9 +4,23 @@ const exams = [80, 98, 92, 78, 77, 90, 89, 84, 81, 77];
 
 // console.log(exams.every (marks => marks > 70));
 
-let goodScores = exams.every(marks => marks > 70);
+// let goodScores = exams.every(marks => marks > 70);
 
-console.log(goodScores);
+// console.log(goodScores);
+
+//! Another use of some ---Here two functions are used  
+//^ a test function: returns age that is less that 18
+function checkMinor(age) {
+  return age < 18;
+}
+
+const ageArray = [34, 23, 20, 26, 12];
+
+//^ checks whether ageArray contains any element that is less than 18
+let check = ageArray.some(checkMinor);
+
+console.log(check);
+
 
 const movies = [
     {
