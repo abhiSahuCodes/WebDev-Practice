@@ -1,4 +1,4 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
 //^ To print each number present inside the array
 
@@ -58,3 +58,9 @@ const movies = [
 movies.forEach(function(movie){
     console.log(`${movie.title}- ${movie.score}/100`);
 })
+
+let NamesYouKnow = ['Tilak', 'Samiksha', 'Chanchal'];
+
+const allNames = NamesYouKnow.forEach(namings => console.log(namings));
+
+
