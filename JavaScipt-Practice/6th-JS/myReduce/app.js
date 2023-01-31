@@ -28,11 +28,75 @@ const prices = [9.99, 1.5, 19.99, 49.99, 30.5];
 // console.log(minValue);
 
 //^ To find the maximum in the prices array, we can use array
-const maxValue = prices.reduce((min, price) => {
-    if (price > min) {
-        return price;
+// const maxValue = prices.reduce((min, price) => {
+//     if (price > min) {
+//         return price;
+//     }
+//     return min;
+// })
+
+// console.log(maxValue);
+
+const movies = [
+  {
+    title: "Amadeus",
+    score: 99,
+    year: 1984,
+  },
+  {
+    title: "Sharknado",
+    score: 35,
+    year: 2013,
+  },
+  {
+    title: "13 Going On 30",
+    score: 70,
+    year: 2004,
+  },
+  {
+    title: "Stand By Me",
+    score: 85,
+    year: 1986,
+  },
+  {
+    title: "Waterworld",
+    score: 62,
+    year: 1995,
+  },
+  {
+    title: "Jingle All The Way",
+    score: 71,
+    year: 1996,
+  },
+  {
+    title: "Parasite",
+    score: 95,
+    year: 2019,
+  },
+  {
+    title: "Notting Hill",
+    score: 77,
+    year: 1999,
+  },
+  {
+    title: "Alien",
+    score: 90,
+    year: 1979,
+  },
+];
+
+const highRated = movies.reduce((currentMovie, bestMovie) => {
+    if (currentMovie.score > bestMovie.score) {
+        return currentMovie
     }
-    return min;
+    return bestMovie
 })
 
-console.log(maxValue);
+console.log(highRated);
+
+//^ To give an initial value, we pass that value as an extra argument into reduce
+const evens = [2, 6, 8, 14];
+const sum = evens.reduce((sum, num) => sum + num); //30
+console.log(sum); 
+const sumAgain = evens.reduce((sum, num) => sum + num, 110);
+console.log(sumAgain);
