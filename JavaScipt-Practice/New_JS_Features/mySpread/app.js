@@ -17,3 +17,21 @@ const dogs = ["Rusty", "Wyatt"]
 
 // const catDog = cats.concat(dogs) //^ This can be written as this
 const catDog = [...cats, ...dogs];
+
+//! ----------------Spread in Objects---------------------------
+const movie = {Title: "Bahubali", Year: 2015};
+const sequel = {Superhit: true, Critics: "Mixed", Year: 2016};
+
+const greatMovie = {...movie, ...sequel}; //^ Upon mixing both, the Year i.e. common between both, the later will be inserted and shown
+console.log(greatMovie);
+
+
+//^ We can add more keys if we want to an previously defined object 
+const dataFromForm = {
+    email: "simpleElement@gmail.com",
+    password: "simplicityIsHere",
+    username: "simElement"
+}
+
+const newData = {...dataFromForm, id: 5124, isAdmin: false};
+console.log(newData);
