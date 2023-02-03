@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+    padding: 2rem 0 5rem;
+}
+
+.one {
+    width: 40rem;
+    height: 20rem;
+    background-color: brown;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.two {
+    width: 30rem;
+    height: 30rem;
+    background-color: coral;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
