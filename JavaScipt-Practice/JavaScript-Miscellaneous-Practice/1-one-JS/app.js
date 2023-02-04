@@ -43,4 +43,18 @@ let s = today.getSeconds();
 console.log (h + ":" + m + ":" + s);
 
 
+//Current week number in javascript
+//defining a date object variable that will take the current system date
+todaydate = new Date();
 
+//finding the year of the current date
+let oneDay =  new Date(todaydate.getFullYear(), 0, 1); 
+  
+//calculating number of days in given year before a given date 
+let numberOfDays =  Math.floor((todaydate - oneDay) / (24 * 60 * 60 * 1000)); 
+  
+//adding 1 since to current date and returns value starting from 0 
+let result = Math.ceil(( todaydate.getDay() + 1 + numberOfDays) / 7);   
+
+//display the calculated result       
+console.log("Week Numbers of current date (" + todaydate + ") is: " + result); 
