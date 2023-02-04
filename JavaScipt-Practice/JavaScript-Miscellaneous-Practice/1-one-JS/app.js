@@ -58,3 +58,28 @@ let result = Math.ceil(( todaydate.getDay() + 1 + numberOfDays) / 7);
 
 //display the calculated result       
 console.log("Week Numbers of current date (" + todaydate + ") is: " + result); 
+
+//===============================
+// ! ----while loop----//  
+//===============================
+
+//^ Sum of Positive Numbers Only
+// if the user enters a negative numbers, the loop ends
+// the negative number entered is not added to sum
+
+let newSum = 0;
+
+// taking input from the user
+let number = parseInt(prompt('Enter a number: '));
+
+while(number >= 0) {
+
+    // adding all positive numbers
+    newSum += number;
+
+    // taking input again if the number is positive
+    number = parseInt(prompt('Enter a number: '));
+}
+
+// display the sum
+console.log(`The sum is ${newSum}.`); 
