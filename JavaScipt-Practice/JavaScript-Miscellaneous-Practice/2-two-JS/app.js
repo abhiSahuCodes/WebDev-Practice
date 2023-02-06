@@ -49,11 +49,23 @@
 
 let tvCompanies = ['Sony', 'LG', 'Samsung', 'Hisense', 'Motorola', 'Redmi', 'Realme', 'OnePlus']
 
-function bestTV() {
-  for (let names of tvCompanies) {
-    console.log(names);
-  }
-}
+// function bestTV() {
+//   for (let names of tvCompanies) {
+//     console.log(names);
+//   }
+// }
 
-bestTV();
+// bestTV();
+
+//^ Iteration variables: const declarations and for...of loop----
+
+//Pushing elements inside for of loop as array elements were not defined prior to the loop 
+const arr = [];
+for (const el of [1, 2, 3]) {
+  arr.push(() => el);
+} 
+
+console.log(arr.map(f => f()));
+
+
 
