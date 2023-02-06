@@ -47,7 +47,7 @@
 
 //^ -------------for of loop----------------------
 
-let tvCompanies = ['Sony', 'LG', 'Samsung', 'Hisense', 'Motorola', 'Redmi', 'Realme', 'OnePlus']
+// let tvCompanies = ['Sony', 'LG', 'Samsung', 'Hisense', 'Motorola', 'Redmi', 'Realme', 'OnePlus']
 
 // function bestTV() {
 //   for (let names of tvCompanies) {
@@ -57,15 +57,24 @@ let tvCompanies = ['Sony', 'LG', 'Samsung', 'Hisense', 'Motorola', 'Redmi', 'Rea
 
 // bestTV();
 
-//^ Iteration variables: const declarations and for...of loop----
+//& Iteration variables: const declarations and for...of loop----
 
-//Pushing elements inside for of loop as array elements were not defined prior to the loop 
-const arr = [];
-for (const el of [1, 2, 3]) {
-  arr.push(() => el);
-} 
+//Pushing elements inside for of loop as array elements were not defined prior to the loop--- 
+// const arr = [];
+// for (const el of [1, 2, 3]) {
+//   arr.push(() => el);
+// } 
 
-console.log(arr.map(f => f()));
+// console.log(arr.map(f => f()));
 
+//& Iterating with a destructuring pattern
+const map = new Map().set(false, "no").set(true, "yes");
+for (const [a, b] of map) {
+  console.log(`key = ${a}, value = ${b}`);
+}
 
-
+//Array.prototype.entries(); for iterable objects 
+const arr = ["l", "m", "n", "o", "p"];
+for (const [a, b] of arr.entries()) {
+  console.log(`key = ${a}, value = ${b}`);
+}
