@@ -10,7 +10,8 @@
 //^ To change the text, we can use innerText while changing the whole element of html we need to use innerHTML
 
 document.querySelector("h1").innerText = "The best Chickens";
-document.querySelector("a").innerText = "hello"; //This will select and change the first a in the document
+// document.querySelector("a").innerText = "hello";
+ //This will select and change the first a in the document
 //To select all the a inside the document we can do this.
 
 const allLinks = document.querySelectorAll("a");
@@ -26,3 +27,15 @@ for (let link of allLinks) {
   link.style.textDecorationStyle = "wavy";
 }
 
+
+//^ Selecting using getAttribute and manipulating using setAttribute
+//We want to change the hrefs of anhor tags to go to google.com
+// document.querySelector("a").setAttribute("href", "https://www.google.com");
+// document.querySelector("a").getAttribute("href");
+
+const h2 = document.querySelector("h2");
+
+h2.getAttribute("class");
+h2.setAttribute("class", "purple"); //This can be done to change the class or add a class
+//^ Again to change we can do this
+h2.setAttribute("class", "border");
