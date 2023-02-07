@@ -33,9 +33,21 @@ for (let link of allLinks) {
 // document.querySelector("a").setAttribute("href", "https://www.google.com");
 // document.querySelector("a").getAttribute("href");
 
-const h2 = document.querySelector("h2");
+// const h2 = document.querySelector("h2");
 
-h2.getAttribute("class");
-h2.setAttribute("class", "purple"); //This can be done to change the class or add a class
-//^ Again to change we can do this
-h2.setAttribute("class", "border");
+// h2.getAttribute("class");
+// h2.setAttribute("class", "purple"); //This can be done to change the class or add a class
+// //^ Again to change we can do this
+// h2.setAttribute("class", "border");
+
+
+//^ Creating an element 
+let box = document.createElement('div');
+box.style.backgroundColor = 'red';
+box.style.height = '30px';
+box.style.width = '30px';
+document.body.appendChild(box);
+
+let h2 = document.createElement('h2');
+h2.textContent = 'Go Goa Gone';
+document.body.appendChild(h2);
