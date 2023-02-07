@@ -51,3 +51,9 @@ document.body.appendChild(box);
 let h2 = document.createElement('h2');
 h2.textContent = 'Go Goa Gone';
 document.body.appendChild(h2);
+
+//^ Another way of adding and removing class
+const h2 = document.querySelector("h2");
+h2.classList.add("purple");
+h2.classList.add("chickens");
+h2.classList.remove("purple");
