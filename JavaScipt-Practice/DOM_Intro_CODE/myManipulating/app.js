@@ -87,3 +87,12 @@ paragraph.children; //& OUTPUT = HTMLCollection(8) [b, b, a, a, a, a, a, a] --(
 
 paragraph.children[0]; //& OUTPUT = <b> Silkie </b>
 
+//^ Sibling - Let's take an example from the document which doesnot have a parent other than body and which doesnot have any children rather it has siblings
+
+const squareImg = document.querySelector(".square");
+squareImg.nextElementSibling; //& OUTPUT = next element of the same kind
+squareImg.nextSibling; //& OUTPUT = next element of any kind (only criteria is that should be next to this like node text(browser does it without showing))
+
+//^ Same for previous sibling
+squareImg.previousElementSibling;
+squareImg.nextSibling;
