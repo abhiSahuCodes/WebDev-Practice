@@ -42,18 +42,31 @@ for (let link of allLinks) {
 
 
 //^ Creating an element 
-let box = document.createElement('div');
-box.style.backgroundColor = 'red';
-box.style.height = '30px';
-box.style.width = '30px';
-document.body.appendChild(box);
+// let box = document.createElement('div');
+// box.style.backgroundColor = 'red';
+// box.style.height = '30px';
+// box.style.width = '30px';
+// document.body.appendChild(box);
 
-let h2 = document.createElement('h2');
-h2.textContent = 'Go Goa Gone';
-document.body.appendChild(h2);
+// let h2 = document.createElement('h2');
+// h2.textContent = 'Go Goa Gone';
+// document.body.appendChild(h2);
 
 //^ Another way of adding and removing class
 const h2 = document.querySelector("h2");
 h2.classList.add("purple");
 h2.classList.add("chickens");
 h2.classList.remove("purple");
+
+//^ To check whether a particular class is present or not, we can use classList.contains('name')
+console.log(h2.classList.contains('chickens')); 
+//OUTPUT- true
+
+//Now adding a new class to h2
+h2.classList.add("exceptional");
+//Now we can toggle between on and off for the class exceptional----
+h2.classList.toggle("exceptional"); //First toggle after adding--this will toggle off the class and won't show in classList.contains("exceptional") ----OUTPUT-false
+//Again using toggle will turn on the class and will show in classList.contains("exceptional") ----OUTPUT-true
+h2.classList.toggle("exceptional");
+
+ 
