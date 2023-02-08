@@ -14,18 +14,18 @@ document.querySelector("h1").innerText = "The best Chickens";
  //This will select and change the first a in the document
 //To select all the a inside the document we can do this.
 
-const allLinks = document.querySelectorAll("a");
+// const allLinks = document.querySelectorAll("a");
 
-for (let link of allLinks) {
-  link.innerText = "I AM A LINK!!!!";
-}
+// for (let link of allLinks) {
+//   link.innerText = "I AM A LINK!!!!";
+// }
 
 //^ Also we can change the style of the anchor tags content
-for (let link of allLinks) {
-  link.style.color = "rgb(0, 108, 134)";
-  link.style.textDecorationColor = "magenta";
-  link.style.textDecorationStyle = "wavy";
-}
+// for (let link of allLinks) {
+//   link.style.color = "rgb(0, 108, 134)";
+//   link.style.textDecorationColor = "magenta";
+//   link.style.textDecorationStyle = "wavy";
+// }
 
 
 //^ Selecting using getAttribute and manipulating using setAttribute
@@ -53,20 +53,37 @@ for (let link of allLinks) {
 // document.body.appendChild(h2);
 
 //^ Another way of adding and removing class
-const h2 = document.querySelector("h2");
-h2.classList.add("purple");
-h2.classList.add("chickens");
-h2.classList.remove("purple");
+// const h2 = document.querySelector("h2");
+// h2.classList.add("purple");
+// h2.classList.add("chickens");
+// h2.classList.remove("purple");
 
 //^ To check whether a particular class is present or not, we can use classList.contains('name')
-console.log(h2.classList.contains('chickens')); 
-//OUTPUT- true
+// console.log(h2.classList.contains('chickens')); 
+// //& OUTPUT- true
 
-//Now adding a new class to h2
-h2.classList.add("exceptional");
-//Now we can toggle between on and off for the class exceptional----
-h2.classList.toggle("exceptional"); //First toggle after adding--this will toggle off the class and won't show in classList.contains("exceptional") ----OUTPUT-false
-//Again using toggle will turn on the class and will show in classList.contains("exceptional") ----OUTPUT-true
-h2.classList.toggle("exceptional");
+// //& Now adding a new class to h2
+// h2.classList.add("exceptional");
+// //& Now we can toggle between on and off for the class exceptional----
+// h2.classList.toggle("exceptional"); //& First toggle after adding--this will toggle off the class and won't show in classList.contains("exceptional") ----OUTPUT-false
+// //& Again using toggle will turn on the class and will show in classList.contains("exceptional") ----OUTPUT-true
+// h2.classList.toggle("exceptional");
 
- 
+
+//^ To know the parent element (every element can have only and only one direct parent)
+const firstBold = document.querySelector("b"); 
+firstBold; //OUTPUT = <b> Silkie </b>
+firstBold.parentElement; //OUTPUT = <p> ... </p>
+firstBold.parentElement.parentElement; //OUTPUT = <body>... </body>
+firstBold.parentElement.parentElement.parentElement; //OUTPUT = <html>... </html>
+/* In this way the parent element of an element can be known and it can be targeted also. */
+
+//^ Likewise we can also find the child and children of an element (an element can have more than one child)
+//^ Let's use the paragraph parent as the element from above
+const paragraph = firstBold.parentElement;
+paragraph.childElementCount; //& OUTPUT = 8
+
+paragraph.children; //& OUTPUT = HTMLCollection(8) [b, b, a, a, a, a, a, a] --(It can be expanded)
+
+paragraph.children[0]; //& OUTPUT = <b> Silkie </b>
+
