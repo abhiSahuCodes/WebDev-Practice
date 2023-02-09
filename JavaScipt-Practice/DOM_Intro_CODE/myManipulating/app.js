@@ -11,8 +11,8 @@
 
 document.querySelector("h1").innerText = "The best Chickens";
 // document.querySelector("a").innerText = "hello";
- //This will select and change the first a in the document
-//To select all the a inside the document we can do this.
+//& This will select and change the first a in the document
+//& To select all the a inside the document we can do this.
 
 // const allLinks = document.querySelectorAll("a");
 
@@ -27,7 +27,7 @@ document.querySelector("h1").innerText = "The best Chickens";
 //   link.style.textDecorationStyle = "wavy";
 // }
 
-
+//!===========================================================================================
 //^ Selecting using getAttribute and manipulating using setAttribute
 //We want to change the hrefs of anhor tags to go to google.com
 // document.querySelector("a").setAttribute("href", "https://www.google.com");
@@ -36,11 +36,11 @@ document.querySelector("h1").innerText = "The best Chickens";
 // const h2 = document.querySelector("h2");
 
 // h2.getAttribute("class");
-// h2.setAttribute("class", "purple"); //This can be done to change the class or add a class
+// h2.setAttribute("class", "purple"); //& This can be done to change the class or add a class
 // //^ Again to change we can do this
 // h2.setAttribute("class", "border");
 
-
+//!===========================================================================================
 //^ Creating an element 
 // let box = document.createElement('div');
 // box.style.backgroundColor = 'red';
@@ -69,30 +69,47 @@ document.querySelector("h1").innerText = "The best Chickens";
 // //& Again using toggle will turn on the class and will show in classList.contains("exceptional") ----OUTPUT-true
 // h2.classList.toggle("exceptional");
 
-
+//!===========================================================================================
 //^ To know the parent element (every element can have only and only one direct parent)
-const firstBold = document.querySelector("b"); 
-firstBold; //OUTPUT = <b> Silkie </b>
-firstBold.parentElement; //OUTPUT = <p> ... </p>
-firstBold.parentElement.parentElement; //OUTPUT = <body>... </body>
-firstBold.parentElement.parentElement.parentElement; //OUTPUT = <html>... </html>
-/* In this way the parent element of an element can be known and it can be targeted also. */
+// const firstBold = document.querySelector("b"); 
+// firstBold; //& OUTPUT = <b> Silkie </b>
+// firstBold.parentElement; //& OUTPUT = <p> ... </p>
+// firstBold.parentElement.parentElement; //& OUTPUT = <body>... </body>
+// firstBold.parentElement.parentElement.parentElement; //& OUTPUT = <html>... </html>
+// /* In this way the parent element of an element can be known and it can be targeted also. */
 
-//^ Likewise we can also find the child and children of an element (an element can have more than one child)
-//^ Let's use the paragraph parent as the element from above
-const paragraph = firstBold.parentElement;
-paragraph.childElementCount; //& OUTPUT = 8
+// //^ Likewise we can also find the child and children of an element (an element can have more than one child)
+// //^ Let's use the paragraph parent as the element from above
+// const paragraph = firstBold.parentElement;
+// paragraph.childElementCount; //& OUTPUT = 8
 
-paragraph.children; //& OUTPUT = HTMLCollection(8) [b, b, a, a, a, a, a, a] --(It can be expanded)
+// paragraph.children; //& OUTPUT = HTMLCollection(8) [b, b, a, a, a, a, a, a] --(It can be expanded)
 
-paragraph.children[0]; //& OUTPUT = <b> Silkie </b>
+// paragraph.children[0]; //& OUTPUT = <b> Silkie </b>
 
-//^ Sibling - Let's take an example from the document which doesnot have a parent other than body and which doesnot have any children rather it has siblings
+// //^ Sibling - Let's take an example from the document which doesnot have a parent other than body and which doesnot have any children rather it has siblings
 
-const squareImg = document.querySelector(".square");
-squareImg.nextElementSibling; //& OUTPUT = next element of the same kind
-squareImg.nextSibling; //& OUTPUT = next element of any kind (only criteria is that should be next to this like node text(browser does it without showing))
+// const squareImg = document.querySelector(".square");
+// squareImg.nextElementSibling; //& OUTPUT = next element of the same kind
+// squareImg.nextSibling; //& OUTPUT = next element of any kind (only criteria is that should be next to this like node text(browser does it without showing))
 
-//^ Same for previous sibling
-squareImg.previousElementSibling;
-squareImg.nextSibling;
+// //^ Same for previous sibling
+// squareImg.previousElementSibling;
+// squareImg.nextSibling;
+//!=========================================================================================== 
+//^ Append and Append Child
+//& Creating and inserting an image directly inside the body 
+const newImg = document.createElement("img");
+newImg.src = "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=417&q=80" 
+
+//& Now inserting the element inside the body---it will be a direct child of the body and it will be put at the last
+document.body.appendChild(newImg);
+//& To make it same in size like other images, we can give it the same classname
+newImg.classList.add("square");
+//^--------------------------------------------------------------------------------------- 
+//& Creating and inserting an H3 inside div with id = "toc" 
+const newH3 = document.createElement("H3");
+//& As the new created h3 won't have any text, we need to insert text
+newH3.innerText = "Cute Chickens";
+document.querySelector("#toc").appendChild(newH3);
+//^---------------------------------------------------------------------------------------- 
