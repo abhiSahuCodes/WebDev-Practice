@@ -113,3 +113,14 @@ const newH3 = document.createElement("H3");
 newH3.innerText = "Cute Chickens";
 document.querySelector("#toc").appendChild(newH3);
 //^---------------------------------------------------------------------------------------- 
+//^ ============Using Append & Prepend================
+//& It allows to insert more than one things at once 
+//& It can be used to insert directly.. While append is used to insert at the last, prepend can be used to insert at the first position inside an element 
+const newPar = document.querySelector("p");
+newPar.append("Hello, this is using the append property.");
+newPar.append(" Now, we can add more than one like this., See, it has been done!!");
+//^ Now actual use of both the properties
+const newB = document.createElement("b");
+newB.append("Hi! Let's dive into chickens now. ");
+newPar.prepend(newB); //& Inseting at the starting of the first paragraph stored inside newPar
+ 
