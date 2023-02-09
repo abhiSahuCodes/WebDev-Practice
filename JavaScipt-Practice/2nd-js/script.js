@@ -56,15 +56,43 @@
 
 //^ To check whether a date is a weekend
 
-let is_weekend = function(date) {
-    let dt = new Date(date);
-    if (dt.getDay() == 6 || dt.getDay() == 0)
-        {
-            return 'weekend';
+// let is_weekend = function(date) {
+//     let dt = new Date(date);
+//     if (dt.getDay() == 6 || dt.getDay() == 0)
+//         {
+//             return 'weekend';
+//         }
+//     else {
+//         return 'weekday';
+//     }
+// }
+
+// console.log(is_weekend('Jan 27, 2023'));
+
+// ==================================================
+
+//^ Merging two arrays and removing duplicate items
+
+//& Using concat() and for loop
+function getUniqueAfterMerge(arr1, arr2){
+
+    //? merging two arrays
+    let arr = arr1.concat(arr2);
+    let uniqueArr = [];
+
+    //? loop through array
+    for(let i of arr) {
+        if(uniqueArr.indexOf(i) === -1) {
+            uniqueArr.push(i);
         }
-    else {
-        return 'weekday';
     }
+    console.log(uniqueArr);
 }
 
-console.log(is_weekend('Jan 27, 2023'));
+const array1 = [1, 2, 3];
+const array2 = [2, 3, 5]
+
+//? calling the function
+//? passing array argument
+getUniqueAfterMerge(array1, array2); 
+
