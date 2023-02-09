@@ -74,25 +74,41 @@
 //^ Merging two arrays and removing duplicate items
 
 //& Using concat() and for loop
-function getUniqueAfterMerge(arr1, arr2){
+// function getUniqueAfterMerge(arr1, arr2){
 
-    //? merging two arrays
-    let arr = arr1.concat(arr2);
-    let uniqueArr = [];
+//     //? merging two arrays
+//     let arr = arr1.concat(arr2);
+//     let uniqueArr = [];
 
-    //? loop through array
-    for(let i of arr) {
-        if(uniqueArr.indexOf(i) === -1) {
-            uniqueArr.push(i);
-        }
-    }
-    console.log(uniqueArr);
+//     //? loop through array
+//     for(let i of arr) {
+//         if(uniqueArr.indexOf(i) === -1) {
+//             uniqueArr.push(i);
+//         }
+//     }
+//     console.log(uniqueArr);
+// }
+
+// const array1 = [1, 2, 3];
+// const array2 = [2, 3, 5]
+
+// //? calling the function
+// //? passing array argument
+// getUniqueAfterMerge(array1, array2); 
+
+//& Using Spread Syntax and Set 
+function getUniqueAfterMerge(arr1, arr2) {
+  //? merging two arrays
+  let arr = [...arr1, ...arr2];
+
+  //? removing duplicate items
+  let uniqueArr = [...new Set(arr)];
+
+  console.log(uniqueArr);
 }
 
 const array1 = [1, 2, 3];
-const array2 = [2, 3, 5]
+const array2 = [2, 3, 5];
 
 //? calling the function
-//? passing array argument
-getUniqueAfterMerge(array1, array2); 
-
+getUniqueAfterMerge(array1, array2);
