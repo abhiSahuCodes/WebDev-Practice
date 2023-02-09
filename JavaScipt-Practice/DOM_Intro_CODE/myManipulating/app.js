@@ -135,4 +135,33 @@ h1.insertAdjacentElement("afterend", newh2);
 //^ Use of before and after
 const h3 = document.createElement("h3");
 h3.innerText = ("Very Good!");
-h1.after(h3) ;
+h1.after(h3);
+const newh3 = document.createElement("h3");
+newh3.innerText = "It has used before property";
+newh2.before(newh3);
+//^-----------------------------------------------------------------------------------------
+//^ A fun task 
+//^ Inserting 10 small circles after contents section
+
+//& Creating a container div 
+const newDiv = document.createElement("div");
+newDiv.style.width = "100%";
+newDiv.style.height = "auto";
+newDiv.style.display = "flex";
+newDiv.style.padding = "20px";
+newDiv.style.gap = "10px";
+newDiv.classList.add("circleContainer")
+const TOC = document.querySelector("#toc");
+TOC.insertAdjacentElement("afterend", newDiv);
+
+//& Now, creating and inserting 10 small circles using for loop
+for (let i = 1; i <= 10; i += 1) {
+    const circle = document.createElement("div");
+    circle.style.border = "4px solid yellow";
+    circle.style.width = "50px";
+    circle.style.height = "50px";
+    circle.style.borderRadius = "50%";
+    const cirCont = document.querySelector(".circleContainer");
+    cirCont.insertAdjacentElement("beforeend", circle);
+}
+//^-----------------------------------------------------------------------------------------
