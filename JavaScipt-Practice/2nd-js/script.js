@@ -54,7 +54,7 @@
 
 // ==================================================
 
-//^ To check whether a date is a weekend
+//! To check whether a date is a weekend
 
 // let is_weekend = function(date) {
 //     let dt = new Date(date);
@@ -71,9 +71,9 @@
 
 // ==================================================
 
-//^ Merging two arrays and removing duplicate items
+//! Merging two arrays and removing duplicate items
 
-//& Using concat() and for loop
+//^ Using concat() and for loop
 // function getUniqueAfterMerge(arr1, arr2){
 
 //     //? merging two arrays
@@ -96,19 +96,38 @@
 // //? passing array argument
 // getUniqueAfterMerge(array1, array2); 
 
-//& Using Spread Syntax and Set 
-function getUniqueAfterMerge(arr1, arr2) {
-  //? merging two arrays
-  let arr = [...arr1, ...arr2];
+//^ Using Spread Syntax and Set 
+// function getUniqueAfterMerge(arr1, arr2) {
+//   //? merging two arrays
+//   let arr = [...arr1, ...arr2];
 
-  //? removing duplicate items
-  let uniqueArr = [...new Set(arr)];
+//   //? removing duplicate items
+//   let uniqueArr = [...new Set(arr)];
 
-  console.log(uniqueArr);
+//   console.log(uniqueArr);
+// }
+
+// const array1 = [1, 2, 3];
+// const array2 = [2, 3, 5];
+
+// //? calling the function
+// getUniqueAfterMerge(array1, array2);
+
+// ==================================================
+
+//! To check whether a variable is undefined or null
+
+function checkVariable(variable) {
+  if (typeof variable === "undefined" || variable === null) {
+    console.log("The variable is undefined or null");
+  } else {
+    console.log("The variable is neither undefined nor null");
+  }
 }
 
-const array1 = [1, 2, 3];
-const array2 = [2, 3, 5];
+let newVariable;
 
-//? calling the function
-getUniqueAfterMerge(array1, array2);
+checkVariable(8);
+checkVariable("hello");
+checkVariable(null);
+checkVariable(newVariable);
