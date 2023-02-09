@@ -123,4 +123,16 @@ newPar.append(" Now, we can add more than one like this., See, it has been done!
 const newB = document.createElement("b");
 newB.append("Hi! Let's dive into chickens now. ");
 newPar.prepend(newB); //& Inseting at the starting of the first paragraph stored inside newPar
- 
+//^-----------------------------------------------------------------------------------------
+//^ Element.insertAdjacentElement()
+//& This can be used to insert the item at a more controlled or particular point
+const newh2 = document.createElement("h2");
+newh2.append("Chickens Variety !!!") ;
+//& Let's add it after the h1 at the beginning
+const h1 = document.querySelector("h1");
+h1.insertAdjacentElement("afterend", newh2);
+//& syntax = insert.AdjacentElement("position", element) ==== position---"beforebegin", "afterbegin", "beforeend", "afterend"
+//^ Use of before and after
+const h3 = document.createElement("h3");
+h3.innerText = ("Very Good!");
+h1.after(h3) ;
