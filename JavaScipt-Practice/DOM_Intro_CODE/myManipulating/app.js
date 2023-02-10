@@ -165,3 +165,19 @@ for (let i = 1; i <= 10; i += 1) {
     cirCont.insertAdjacentElement("beforeend", circle);
 }
 //^-----------------------------------------------------------------------------------------
+//^ Remove and Remove Child (remove(), removeChild()) 
+//^ node.removeChild(): 
+//& We have to select the parent and call the method to remove their child
+const firstLi = document.querySelector("li");
+const ul = firstLi.parentElement;
+ul.removeChild(firstLi);
+//& We can use this to remove an element just without knowing its parent
+const b = document.querySelector("b");
+b.parentElement.removeChild(b); 
+
+//^ node.remove(): This doesnot support internet explorer
+const againh3 = document.createElement("h3");
+againh3.innerText = "Practicing remove !";
+newh3.after(againh3);
+
+againh3.remove();
