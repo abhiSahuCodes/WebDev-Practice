@@ -25,3 +25,12 @@ console.log(msec);
 let stringReplace = document.getElementById("jkl").innerHTML;
 let result = stringReplace.replace(/JavaScript/gi, "jS");
 document.getElementById("jkl1").innerHTML = "New string: " + result;  
+
+//^ Boolean value of
+// Here Boolean object obj 
+// is created for the value 27
+var obj = new Boolean(27);
+  
+// Here boolean.valueOf() function is 
+// used for the created object obj.
+console.log(obj.valueOf()); 
