@@ -19,3 +19,9 @@ console.log(`${p2}`);
 let date = "February 18, 2018 12:30 PM";
 let msec = Date.parse(date);
 console.log(msec);
+
+//^ JavaScript Replace() Method
+//& string.replace(searchVal,newVal)
+let stringReplace = document.getElementById("jkl").innerHTML;
+let result = stringReplace.replace(/JavaScript/gi, "jS");
+document.getElementById("jkl1").innerHTML = "New string: " + result;  
