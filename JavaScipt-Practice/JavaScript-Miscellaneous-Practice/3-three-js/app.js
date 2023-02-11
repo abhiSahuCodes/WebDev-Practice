@@ -4,5 +4,18 @@ let p1 = parseFloat("18.147656");
 console.log('Using parseFloat("18.147656") = ' + p1);
 
 //^ JavaScript parsInt
-var p2 = parseInt("18great");
+let p2 = parseInt("18great");
 console.log(`${p2}`);
+
+//^ JavaScript String match() Function
+// function matchString() {
+//   let string = "Welcome to my JS study in my HOME";
+//   let result = string.match(/me/g);
+//   console.log("Output : " + result);
+// }
+// matchString(); 
+
+//^ Date parse()
+let date = "February 18, 2018 12:30 PM";
+let msec = Date.parse(date);
+console.log(msec);
