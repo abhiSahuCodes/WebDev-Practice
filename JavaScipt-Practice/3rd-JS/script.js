@@ -463,5 +463,18 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 const arr = ["a", "b", "c", "d", "e"];
 console.log(arr.copyWithin(1, 3));
 
+// !-------------------------------------------------------------------
+
+//^ JavaScript Program to Get Random Item From an Array
+
+function getRandomItem(arr) {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    const item = arr[randomIndex];
+    return item;
+}
+
+const array = [1, 'magical', 9, 8];
+const result = getRandomItem(array);
+console.log(result);
 
 
