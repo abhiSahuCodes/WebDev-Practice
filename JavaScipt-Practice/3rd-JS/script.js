@@ -460,32 +460,65 @@ let movies = ['Hum Tum', 'Hum Dil De Chuke Sanam', 'Hasina Maan Jayegi']
 
 //It copies the elements whose indices are in the range [start,end) to index target and subsequent indices. If the two index ranges overlap, care is taken that all source elements are copied before they are overwritten.
 
-const arr = ["a", "b", "c", "d", "e"];
-console.log(arr.copyWithin(1, 3));
+// const arr = ["a", "b", "c", "d", "e"];
+// console.log(arr.copyWithin(1, 3));
 
 // !-------------------------------------------------------------------
 
 //^ JavaScript Program to Get Random Item From an Array
 
-function getRandomItem(arr) {
-    const randomIndex = Math.floor(Math.random() * arr.length);
-    const item = arr[randomIndex];
-    return item;
-}
+// function getRandomItem(arr) {
+//     const randomIndex = Math.floor(Math.random() * arr.length);
+//     const item = arr[randomIndex];
+//     return item;
+// }
 
-const array = [1, 'magical', 9, 8];
-const result = getRandomItem(array);
-console.log(result);
+// const array = [1, 'magical', 9, 8];
+// const result = getRandomItem(array);
+// console.log(result);
 
 
 // !-------------------------------------------------------------------
 
-//^ Break with for loop
-for (let i = 1; i <= 5; i++) {
-  // break condition
-  if (i == 3) {
-    break;
-  }
-  console.log(i);
-} 
+// //^ Break with for loop
+// for (let i = 1; i <= 5; i++) {
+//   // break condition
+//   if (i == 3) {
+//     break;
+//   }
+//   console.log(i);
+// } 
 
+//^ Break with while loop
+// let sum = 0,
+//   number;
+
+// while (true) {
+//   number = parseInt(prompt("Enter a number: "));
+
+//   // break condition
+//   if (number < 0) {
+//     break;
+//   }
+
+//   // add all positive numbers
+//   sum += number;
+// }
+
+// // display the sum
+// console.log(`The sum is ${sum}.`); 
+
+// !-------------------------------------------------------------------
+//^ Find the longest word within a string
+function find_longest_word(str) {
+  var array1 = str.match(/\w[a-z]{0,}/gi);
+  var result = array1[0];
+
+  for (var x = 1; x < array1.length; x++) {
+    if (result.length < array1[x].length) {
+      result = array1[x];
+    }
+  }
+  return result;
+}
+console.log(find_longest_word("Web Development Tutorial")); 
