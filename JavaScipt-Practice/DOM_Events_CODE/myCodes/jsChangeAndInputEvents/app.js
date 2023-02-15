@@ -16,3 +16,16 @@ input.addEventListener("input", function (e) {
 });
 
 
+
+//^ input event example
+const inputNew = document.querySelector("#guestNames");
+const h2 = document.querySelector("h2");
+
+inputNew.addEventListener('input', function (e) {
+  if (!inputNew.value) {
+    h2.innerText = "Enter names of guests";
+  }
+  else {
+    h2.innerText = inputNew.value;
+  }
+})
