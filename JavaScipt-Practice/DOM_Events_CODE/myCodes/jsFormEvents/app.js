@@ -18,3 +18,39 @@ form.addEventListener("submit", function (e) {
     input.value = ''; 
 });
 
+//^ Second tweetForm events
+
+const tweetForm = document.querySelector("#tweetForm");
+//? const userInput = document.querySelectorAll("input")[0]; 
+const usernameInput = document.querySelector("#userName");
+const tweets = document.getElementById("postTweet");
+
+tweetForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log("submitted!!")
+    //! Storing and Creating 
+    const userValue = usernameInput.value;
+    const tweetsValue = tweets.value;
+    const postListUser = document.createElement("li");
+    const bTag = document.createElement("b");
+    const br = document.createElement("br");
+    //! Appending 
+    bTag.append(userValue);
+    postListUser.append(bTag);
+    postListUser.append(br);
+    postListUser.append(`${tweetsValue}`);
+    tweetsList.append(postListUser);
+    //! Making the input fields blank 
+    usernameInput.value = "";
+    tweets.value = "";
+})
+
+
+//^ If making another list, heading will be username and the items will be the tweet
+// const postListPost = document.createElement("li");
+// postListUser.innerText = userValue;
+// postListPost.innerText = tweetsValue;
+// tweetsList.append(postListUser);
+// postListUser.append(postListPost); 
+
+//^ We can also make another separate function consisting of creating elements and appending them and then calling that function inside the addEventListener.
