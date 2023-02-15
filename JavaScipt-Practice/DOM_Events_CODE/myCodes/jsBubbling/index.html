@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling</title>
+
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section onclick="alert('Section Clicked!!!')">
+        <p onclick="alert('Paragraph Clicked!!!')">
+            I am a paragraph.
+            <button onclick="alert('Button Clicked!!!')">Click</button>
+        </p>
+    </section>
+    <!--^ Upon clicking the button, all the three alerts will be shown from button alert to section alert. This is called EVENT BUBLING  -->
+    
+    
+    
+    
+    <div id="container">
+        Click To Hide
+        <button id="changeColor">Change Color</button>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
