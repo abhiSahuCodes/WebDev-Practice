@@ -1,0 +1,242 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+
+html{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+
+body{
+    overflow: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.container{
+    margin: 4rem 7rem 4rem 7rem;
+    /* width: calc(100%-10%);
+    height: 100%; */
+    
+    
+    /* display: flex; */
+}
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    width: 100%;
+}
+
+.navbar-container img{
+    padding: 0;
+    margin: 0;
+    height: 4rem;
+    width: 12rem;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    right: 4rem;
+}
+
+.list li{
+    list-style: none;
+    font-family: Orbitron;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.list li:first-child{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.list li:first-child::after{
+    content: "";
+    display: block;
+    width: 4rem;
+    border-bottom: 0.3rem solid #000000;
+    margin: auto;
+}
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 8rem;
+    position: relative;
+    right: 2rem;
+    gap: 2rem;
+    margin-left: -6rem;
+}
+
+.search-icon{
+    
+    position: relative;
+    right: 6rem;
+}
+
+.search-icon > svg{
+    width: 2rem;
+    height: 2.5rem;
+    position: relative;
+    right: 2rem;
+}
+
+.nav-button{
+    /* padding: 1rem 2rem; */
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.7rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    width: 12rem;
+    height: 3rem;
+    position: relative;
+    right: 8rem;
+    color: #6F6F6F;
+    
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+    justify-content: space-between;
+}
+
+.hero-container > div > img{
+    height: 40rem;
+    width: 30rem;
+    position: absolute;
+    left: 7rem;
+    /* border: 1px solid orange; */
+}
+
+.square img{
+    height: 20rem;
+    width: 20rem;
+    /* border: 2px solid blue; */
+    position: absolute;
+    left: 21rem;
+    top: 38rem;
+}
+
+.hero-container > span:nth-of-type(2) img{
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    right: 72rem;
+    bottom: 30rem;
+    
+}
+
+.hero-container > span:nth-of-type(3) img{
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    right: 10rem;
+    
+}
+
+.hero-container-right{
+    position: relative;
+    right: 10rem;
+    bottom: 15rem; 
+    padding-right: 0rem;
+}
+
+.globe img{
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    right: 58rem;
+    top: 10rem;
+    
+}
+
+.hero-heading{
+    font-size: 5.5rem;
+    font-family: Orbitron;
+    position: relative;
+    top: 20rem;
+    /* margin-bottom: -2rem; */
+    white-space: no-wrap;
+}
+
+.hero-description{
+    font-size: 1.2rem;
+    font-family: Poppins;
+    position: relative;
+    top: 25rem;
+    left: 10rem;
+    width: 55rem;
+    text-align: center;    
+}
+
+.button-email, .button-join{
+    position: relative;
+    top: 30rem;
+    left: 25rem;
+    font-size: 1.5rem;
+    
+}
+
+.button-email{
+    font-family: "Orbitron";
+    border: 0.2rem solid #000000;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1.5rem;
+    font-weight: 500;
+    color: #6F6F6F;
+}
+
+.button-join{
+    font-family: "Orbitron";
+    border-radius: 0.5rem;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.2rem 0.2rem;
+}
+
+.contact-heading{
+    position: relative;
+    top: 38rem;
+    left: 33rem;
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #6F6F6F;
+    display: inline;
+    
+}
+
+.icons{
+    position: relative;
+    top: 39rem;
+    left: 0.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.icons img{
+    width: 3rem;
+    height: 3rem;
+}
