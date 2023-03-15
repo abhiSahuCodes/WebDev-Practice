@@ -3,7 +3,7 @@
 ## INPUT IMAGE
 
 
-![INPUT IMAGE](/firstAssignmentImage/myFirst-OUTPUT-Images/INPUT-1.png)
+![INPUT IMAGE](./firstAssignmentImage/myFirst-OUTPUT-Images/INPUT-1.png)
 
 ------------------------------------
 ## TASK-1 (First Assignment)
@@ -22,7 +22,7 @@ ulFirst.appendChild(liFourth);
 
 ------------------------------------
 **task-1 output**
-![task-one Output](/firstAssignmentImage/myFirst-OUTPUT-Images/task-1.png)
+![task-one Output](./firstAssignmentImage/myFirst-OUTPUT-Images/task-1.png)
 
 ------------------------------------
 ------------------------------------
@@ -43,7 +43,7 @@ input.placeholder = "Search My Projects";
 
 ------------------------------------
 **task-2 output**
-![task-3 Output](/firstAssignmentImage/myFirst-OUTPUT-Images/task-2.png)
+![task-3 Output](./firstAssignmentImage/myFirst-OUTPUT-Images/task-2.png)
 
 ------------------------------------
 ------------------------------------
@@ -70,7 +70,7 @@ liThird.innerText = "Projects";
 
 ------------------------------------
 **task-3 output**
-![task-3 Output](/firstAssignmentImage/myFirst-OUTPUT-Images/task-3.png)
+![task-3 Output](./firstAssignmentImage/myFirst-OUTPUT-Images/task-3.png)
 
 ------------------------------------
 ------------------------------------
@@ -91,7 +91,7 @@ liThird.innerText = "Projects";
 
 ------------------------------------
 **task-4 output**
-![task-4 Output](/firstAssignmentImage/myFirst-OUTPUT-Images/task-4.png)
+![task-4 Output](./firstAssignmentImage/myFirst-OUTPUT-Images/task-4.png)
 
 ------------------------------------
 ------------------------------------
@@ -116,7 +116,7 @@ liThird.innerText = "Projects";
 
 ------------------------------------
 **task-5 output**
-![task-5 Output](/firstAssignmentImage/myFirst-OUTPUT-Images/task-5.png)
+![task-5 Output](./firstAssignmentImage/myFirst-OUTPUT-Images/task-5.png)
 
 ------------------------------------
 ------------------------------------
@@ -126,7 +126,7 @@ liThird.innerText = "Projects";
 
 ## INPUT IMAGE
 
-![INPUT IMAGE](/secondAssignmentImage/mySecond-OUTPUT-Images/INPUT-2.png)
+![INPUT IMAGE](./secondAssignmentImage/mySecond-OUTPUT-Images/INPUT-2.png)
 
 ------------------------------------
 
@@ -158,7 +158,7 @@ liThird.innerText = "Projects";
 
 ------------------------------------
 **task-1 output**
-![task-1 Output](/secondAssignmentImage/mySecond-OUTPUT-Images/task-1.png)
+![task-1 Output](./secondAssignmentImage/mySecond-OUTPUT-Images/task-1.png)
 
 ------------------------------------
 ------------------------------------
@@ -203,7 +203,7 @@ liThird.innerText = "Projects";
 
 ------------------------------------
 **task-2 output**
-![task-2 Output](/secondAssignmentImage/mySecond-OUTPUT-Images/task-2.png)
+![task-2 Output](./secondAssignmentImage/mySecond-OUTPUT-Images/task-2.png)
 
 ------------------------------------
 ------------------------------------
@@ -245,7 +245,7 @@ messageOutput.value = "Hello World";
 
 ------------------------------------
 **task-1 output**
-![task-1 Output](/thirdAssignmentImage/myThird-OUTPUT-Images/task-1.png)
+![task-1 Output](./thirdAssignmentImage/myThird-OUTPUT-Images/task-1.png)
 
 ------------------------------------
 ------------------------------------
