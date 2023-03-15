@@ -211,7 +211,7 @@ liThird.innerText = "Projects";
 
 # THIRD ASSIGNMENT
 
-![INPUT IMAGE](/thirdAssignmentImage/myThird-OUTPUT-Images/INPUT-3.png)
+![INPUT IMAGE](./thirdAssignmentImage/myThird-OUTPUT-Images/INPUT-3.png)
 
 ------------------------------------
 
