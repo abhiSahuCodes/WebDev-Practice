@@ -19,11 +19,11 @@ And size gradually decreases if font-size is less than 1em. */
 1st parent one */
 
 #rems h2 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #rems h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 #rems ul {
