@@ -131,3 +131,4 @@ checkVariable(8);
 checkVariable("hello");
 checkVariable(null);
 checkVariable(newVariable);
+

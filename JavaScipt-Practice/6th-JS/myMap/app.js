@@ -44,3 +44,6 @@ console.log(movieNames);
 // })
 
 
+let greet = (names) => {
+    return `Hey ${names}`
+}

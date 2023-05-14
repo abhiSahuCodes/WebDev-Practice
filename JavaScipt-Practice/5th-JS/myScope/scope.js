@@ -82,22 +82,26 @@
 
 //^ This also can be said if there are two levels i.e, parent, child, grandchild. 
 
-function bankRobbery() {
-    const heros = ['Shaktiman', 'Superman', 'Batman'];
-    //todo console.log(color); 
-    //^ This console.log(color) can't access what's inside its child and will give an error.
-    function cryForHelp() {
-        let color = 'milkygray';
-        function grandChild() {
-            for (let hero of heros) {
-                console.log(`Please, come and help us ${hero.toUpperCase()}.`)
-                console.log(color); //^ This can be accessed by grandChild.
-            }
-        }
-        grandChild();
-    }
-    cryForHelp();
-}
+// function bankRobbery() {
+//     const heros = ['Shaktiman', 'Superman', 'Batman'];
+//     //todo console.log(color); 
+//     //^ This console.log(color) can't access what's inside its child and will give an error.
+//     function cryForHelp() {
+//         let color = 'milkygray';
+//         function grandChild() {
+//             for (let hero of heros) {
+//                 console.log(`Please, come and help us ${hero.toUpperCase()}.`)
+//                 console.log(color); //^ This can be accessed by grandChild.
+//             }
+//         }
+//         grandChild();
+//     }
+//     cryForHelp();
+// }
 
-bankRobbery();
+// bankRobbery();
+
+//!------------this------------------------------------------------
+ 
+
 

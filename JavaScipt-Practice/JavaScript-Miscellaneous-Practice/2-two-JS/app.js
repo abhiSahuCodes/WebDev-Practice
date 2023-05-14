@@ -68,13 +68,25 @@
 // console.log(arr.map(f => f()));
 
 //& Iterating with a destructuring pattern
-const map = new Map().set(false, "no").set(true, "yes");
-for (const [a, b] of map) {
-  console.log(`key = ${a}, value = ${b}`);
-}
+// const map = new Map().set(false, "no").set(true, "yes");
+// for (const [a, b] of map) {
+//   console.log(`key = ${a}, value = ${b}`);
+// }
 
 //Array.prototype.entries(); for iterable objects 
-const arr = ["l", "m", "n", "o", "p"];
-for (const [a, b] of arr.entries()) {
-  console.log(`key = ${a}, value = ${b}`);
-}
+// const arr = ["l", "m", "n", "o", "p"];
+// for (const [a, b] of arr.entries()) {
+//   console.log(`key = ${a}, value = ${b}`);
+// }
+
+
+// !-------------------------------------------------------------------
+
+//^ Break with for loop
+for (let i = 1; i <= 5; i++) {
+  // break condition
+  if (i == 3) {
+    break;
+  }
+  console.log(i);
+} 

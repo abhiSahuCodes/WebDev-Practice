@@ -28,12 +28,16 @@ html {
 body{
     max-width: 1440px;
     margin: 0 auto;
-    background-color: #161616;
     overflow:auto;
     overflow-x: hidden;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
+}
+
+.container {
+    background-color: #161616;
+    display: flow-root;
 }
 
 /* !----Front-Page---- */
@@ -82,7 +86,7 @@ body{
     position: relative;
     left: 16%;
     top: 2px;
-    z-index: -1;
+    z-index: 1;
 }
 
 
@@ -261,7 +265,7 @@ body{
                 position: relative;
                 left: 16%;
                 top: 2px;
-                z-index: -1;
+                z-index: 1;
             }
 
 
